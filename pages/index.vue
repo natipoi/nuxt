@@ -20,7 +20,7 @@
           <div class="app-feature">
               <!-- app's image-->
               <div class="app-image">
-                  <img src="~/assets/sp1.jpeg" width="100%">
+                  <img src="/images/sp1.jpeg" width="100%">
               </div>
               <!-- app's description-->
               <div class="app-description">
@@ -40,7 +40,7 @@
           <div class="app-feature">
               <!-- app's image-->
               <div class="app-image">
-                  <img src="~/assets/sp2.jpeg" width="100%">
+                  <img src="/images/sp2.jpeg" width="100%">
               </div>
               <!-- app's description-->
               <div class="app-description">
@@ -60,7 +60,7 @@
           <div class="app-feature">
               <!-- app's image-->
               <div class="app-image">
-                  <img src="~/assets/sp3.jpeg" width="100%">
+                  <img src="/images/sp3.jpeg" width="100%">
               </div>
               <!-- app's description-->
               <div class="app-description">
@@ -92,9 +92,9 @@
               <span class="insta-images-wrap-arrow arrow-left tap-arrow" attr="left"></span>
               <span class="insta-images-wrap-arrow arrow-right tap-arrow" attr="right"></span>
               <ul id="insta-images">
-                  <li id="first-insta-image"><a href="https://www.instagram.com/fitpoi_app/"><img src="~/assets/insta/insta1.jpg" width="100%"></a></li>
-                  <li><a href="https://www.instagram.com/fitpoi_app/"><img src="~/assets/insta/insta2.jpg" width="100%"></a></li>
-                  <li><a href="https://www.instagram.com/fitpoi_app/"><img src="~/assets/insta/insta3.jpg" width="100%"></a></li>
+                  <li id="first-insta-image"><a href="https://www.instagram.com/fitpoi_app/"><img src="/images/insta/insta1.jpg" width="100%"></a></li>
+                  <li><a href="https://www.instagram.com/fitpoi_app/"><img src="/images/insta/insta2.jpg" width="100%"></a></li>
+                  <li><a href="https://www.instagram.com/fitpoi_app/"><img src="/images/insta/insta3.jpg" width="100%"></a></li>
               </ul>
           </div>
           <ul class="sns-icon">
