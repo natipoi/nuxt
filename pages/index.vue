@@ -93,8 +93,8 @@
               <span class="insta-images-wrap-arrow arrow-right tap-arrow" attr="right"></span>
               <ul id="insta-images">
                   <li id="first-insta-image"><a href="https://www.instagram.com/fitpoi_app/"><img src="~/assets/insta/insta1.jpg" width="100%"></a></li>
-                  <li><a href="https://www.instagram.com/fitpoi_app/"><img src="insta/insta2.jpg" width="100%"></a></li>
-                  <li><a href="https://www.instagram.com/fitpoi_app/"><img src="insta/insta3.jpg" width="100%"></a></li>
+                  <li><a href="https://www.instagram.com/fitpoi_app/"><img src="~/assets/insta/insta2.jpg" width="100%"></a></li>
+                  <li><a href="https://www.instagram.com/fitpoi_app/"><img src="~/assets/insta/insta3.jpg" width="100%"></a></li>
               </ul>
           </div>
           <ul class="sns-icon">
