@@ -78,6 +78,9 @@ export default {
   env: {
     TEST,
     baseUrl: process.env.BASE_URL || "http://localhost:3000"
+  },
+  router: {
+    base: "/nuxt/"
   }
 };
 
