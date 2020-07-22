@@ -19,7 +19,7 @@
                 <div class="footer-bottom">
                 <ul id="footer-list2" class="footer-list">
                     <li><a href="">Fitpoi利用規約</a></li>
-                    <li><a href="privacy_policy/">プライバシーポリシー</a></li>
+                    <li><a href="/privacy_policy/">プライバシーポリシー</a></li>
                 </ul>
             
                 <div id="footer-logo">
