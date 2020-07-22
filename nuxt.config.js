@@ -77,10 +77,10 @@ export default {
   },
   env: {
     TEST,
-    baseUrl: process.env.BASE_URL || "http://localhost:3000"
+    baseUrl: process.env.BASE_URL || "https://fitpoi.com"
   },
   router: {
-    base: "/nuxt/"
+    base: "/"
   }
 };
 
