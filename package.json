@@ -10,6 +10,7 @@
     "deploy": "push-dir --dir=dist --branch=master --cleanup"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.12.0",
     "@nuxtjs/dotenv": "^1.4.1",
     "ember-cli-simple-auth-torii": "^0.8.0",
     "nuxt": "^2.13.0",

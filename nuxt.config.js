@@ -1,5 +1,6 @@
-require('dotenv').config();
+
 const { TEST } = process.env;
+
 export default {
   /*
    ** Nuxt rendering mode
@@ -64,10 +65,12 @@ export default {
    ** Nuxt.js dev-modules
    */
   buildModules: [],
+
+  serverMiddleware: [],
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
@@ -80,7 +83,18 @@ export default {
     baseUrl: process.env.BASE_URL || "https://fitpoi.com"
   },
   router: {
-    base: "/"
+    base: "/",
+    // middleware: "stats"
   }
+  // modules: ["@nuxtjs/axios"],
+  // axios: {
+  //   proxy: true
+  // },
+  // proxy: {
+  //   "/email/": {
+  //     target: "http://0.0.0.0:3000/",
+  //     pathRewrite: { "^/email/": "" }
+  //   }
+  // }
 };
 
