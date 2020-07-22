@@ -1,0 +1,40 @@
+<template>
+    <main class="main">
+
+        <div>
+            <h1>協力ジム</h1>
+        </div>
+
+        <div class="partner-list">
+        <a href="https://www.wellness-j.com/" class="partnet-box">
+            <div class="partner-icon">
+                <img src="~/assets/partner/wellness.png" width="100%">
+            </div>
+            <div class="partnte-detail">
+                <div class="partnte-detail-inner">
+                <h2>WELLNESS JOURNAL</h2>
+                <p class="p3">スペシャルティパーソナルトレーニングジム</p>
+                </div>
+            </div>
+        </a>
+        </div>
+
+
+    </main>
+</template>
+<style>
+    h1::after {content:"Fitpoiの頼れるパートナー"; font-size: 0.8rem; color: #969594;padding-left: 10px;font-weight: 400;}
+    .partnet-box {display: flex; align-items: center;justify-content: center;padding: 20px;background-color: #fff;  border-radius: 10px; color: black}
+    .partnet-box:hover {opacity: 0.7;}
+    .partner-icon {width: 20%;margin-right: 20px}
+    .partnte-detail-inner {margin: auto 0;}
+    .p3 {margin-bottom: 0;}
+    h2 {margin-bottom: 0;}
+
+    @media screen and (min-width: 720px){
+        .partner-list {display: flex;}
+        .partner-list a {width: 45%;}
+        .partner-list h2 {font-size: 1.0rem;}
+        .partner-list .p3 {font-size: 0.5rem;}
+    }
+</style>

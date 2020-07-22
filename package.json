@@ -1,0 +1,19 @@
+{
+  "name": "fitpoi",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "export": "nuxt export",
+    "serve": "nuxt serve"
+  },
+  "dependencies": {
+    "@nuxtjs/dotenv": "^1.4.1",
+    "ember-cli-simple-auth-torii": "^0.8.0",
+    "nuxt": "^2.13.0",
+    "torii": "^0.10.1"
+  },
+  "devDependencies": {}
+}
