@@ -20,7 +20,7 @@
         </div>
 
         <div class="text-field">
-            <textarea id="body" rows="10" placeholder="入力してください" name="message"></textarea>
+            <textarea id="message-input" rows="10" placeholder="入力してください" name="message"></textarea>
         </div>
         </div>
 
@@ -37,9 +37,13 @@
 export default {
     methods: {
         sendMassage () {
-            var fd = new FormData();
-            var fd = new FormData($('#form').get(0));
-            this.$store.dispatch('sendMessageToSlack', fd)
+            var email = $("#email-input").val()
+            var message = $("#message-input").val()
+            console.log(email,message  )
+            this.$store.dispatch('sendMessageToSlack', {
+               email: email,
+               message: message
+            })
             if (process.client) {
                 $("#form").hide()
             }

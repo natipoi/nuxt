@@ -15,13 +15,12 @@ export const mutations = {
 
 export const actions = {
   sendMessageToSlack({ commit }, message) {
-    var sendStatus = true;
     var data = JSON.stringify({
-      username: "contact from website",
-      text: "receive a message form website",
-      blocks: message,
+      username: message.email,
+      text: message.message,
       icon_emoji: ":ghost:"
     });
+    console.log(typeof(data))
 
     var options = {
       hostname: "hooks.slack.com",
@@ -29,7 +28,6 @@ export const actions = {
       path: "/services/TLQPTRKR8/B017D8JS8MU/341twjPTtSOJkjXZ8NCwkNmH",
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
         "Content-Length": Buffer.byteLength(data)
       }
     };

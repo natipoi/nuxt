@@ -12,8 +12,12 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.12.0",
     "@nuxtjs/dotenv": "^1.4.1",
+    "@slack/webhook": "^5.0.3",
     "ember-cli-simple-auth-torii": "^0.8.0",
+    "install": "^0.13.0",
+    "npm": "^6.14.7",
     "nuxt": "^2.13.0",
+    "require-https": "^1.1.2",
     "torii": "^0.10.1",
     "vuex": "^3.5.1"
   },
