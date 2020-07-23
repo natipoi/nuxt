@@ -14,7 +14,8 @@
     "@nuxtjs/dotenv": "^1.4.1",
     "ember-cli-simple-auth-torii": "^0.8.0",
     "nuxt": "^2.13.0",
-    "torii": "^0.10.1"
+    "torii": "^0.10.1",
+    "vuex": "^3.5.1"
   },
   "devDependencies": {
     "push-dir": "^0.4.1"

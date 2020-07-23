@@ -66,7 +66,9 @@ export default {
    */
   buildModules: [],
 
-  serverMiddleware: [],
+  serverMiddleware: [
+
+  ],
   /*
    ** Nuxt.js modules
    */
@@ -84,7 +86,7 @@ export default {
   },
   router: {
     base: "/",
-    // middleware: "stats"
+
   }
   // modules: ["@nuxtjs/axios"],
   // axios: {

@@ -4,7 +4,7 @@
         <div class="heading-box">
             <h1>お問い合わせ</h1>
         </div>
-        <form id="form" action="https://getform.io/f/92787548-342b-486d-872f-a6e88d14587d" method="POST">
+        <form id="form" action="/email/" method="POST">
         <div class="form-box">
             <div class="heading-box">
             <h2>メールアドレス</h2>
@@ -25,12 +25,28 @@
         </div>
 
         <div class="submit-button-box">
-            <button type="button" id="submit-button">お問い合わせを送信する</button>
+            <button type="button" id="submit-button" @click="sendMassage()">お問い合わせを送信する</button>
         </div>
         </form>
-        <div class="after-send-message">お問い合わせ内容を送信しました。回答まで 1〜7日ほどお待ちください。</div>
+        <div class="after-send-message">{{ $store.state.message }}</div>
+
     </main>
 </template>
+
+<script>
+export default {
+    methods: {
+        sendMassage () {
+            var fd = new FormData();
+            var fd = new FormData($('#form').get(0));
+            this.$store.dispatch('sendMessageToSlack', fd)
+            if (process.client) {
+                $("#form").hide()
+            }
+        }
+    }
+}
+</script>
 
 <style>
 
@@ -47,7 +63,7 @@ textarea[id=body]{width: 100%;}
 #submit-button {color: #FF4B00; border-bottom: solid 2px #FF4B00; font-size: 1.2rem;padding:10px; font-weight: 900;}
 
 .positive-button {display: none;}
-.after-send-message {display: none;margin: 0 30px;}
+.after-send-message {margin: 0 30px;}
 .overlay {display: none;position: fixed; top: 0; left: 0; bottom: 0; right: 0; z-index: 1000; background-color: rgba(255, 255, 255, 0.8); transition: all 0.2s;}
 .loader {
   position: fixed;
@@ -127,43 +143,5 @@ textarea[id=body]{width: 100%;}
     .heading-box {margin: 0}
 }
 </style>
-<script>
-if (process.client) {
-window.onload = function() {
-    $("#submit-button").on("click", function(e){
-        e.preventDefault();
-        var action = $("#form").attr("action");
-        $.ajax({
-        type: "POST",
-        url: action,
-        crossDomain: true,
-        data: new FormData($("#form").get(0)),
-        dataType: "json",
-        contentType: "multipart/form-data",
-        processData: false,
-        contentType: false,
-        headers: {
-            "Accept": "application/json"
-        },
-        beforeSend: function(){
-            $('.overlay').show()
-        }
-        }).done(function() {
-
-            $('.overlay').hide()
-            $("#form").hide()
-            $(".after-send-message").show()
-
-        }).fail(function() {
-
-            alert('An error occurred please try again later.')
-        });
-
-    })
-}
-}
-
-</script>
 
 
- 
