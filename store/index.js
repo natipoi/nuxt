@@ -8,19 +8,19 @@ export const state = () => ({
 export const mutations = {
   afterSendMessage(state, sendStatus) {
     state.message = sendStatus
-      ? "お問い合わせ内容を送信しました。回答まで 1〜7日ほどお待ちください。"
+      ? process.env.SUCCESSMESSAGE
       : "お問い合わせ内容を送信できませんでした。お手数ですが再度お試しください。";
   }
 };
 
 export const actions = {
   sendMessageToSlack({ commit }, message) {
+
     var data = JSON.stringify({
       username: message.email,
       text: message.message,
       icon_emoji: ":ghost:"
     });
-    console.log(typeof(data))
 
     var options = {
       hostname: "hooks.slack.com",

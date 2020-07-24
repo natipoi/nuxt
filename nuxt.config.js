@@ -1,5 +1,5 @@
 
-const { TEST } = process.env;
+require("dotenv").config();
 
 export default {
   /*
@@ -81,22 +81,12 @@ export default {
     vendor: ["aframe"]
   },
   env: {
-    TEST,
     baseUrl: process.env.BASE_URL || "https://fitpoi.com"
   },
   router: {
     base: "/",
 
-  }
-  // modules: ["@nuxtjs/axios"],
-  // axios: {
-  //   proxy: true
-  // },
-  // proxy: {
-  //   "/email/": {
-  //     target: "http://0.0.0.0:3000/",
-  //     pathRewrite: { "^/email/": "" }
-  //   }
-  // }
+  },
+  modules: ['@nuxtjs/dotenv'],
 };
 
