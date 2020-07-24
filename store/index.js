@@ -8,7 +8,7 @@ export const state = () => ({
 export const mutations = {
   afterSendMessage(state, sendStatus) {
     state.message = sendStatus
-      ? process.env.SUCCESSMESSAGE
+      ? "お問い合わせ内容を送信しました。回答まで 1〜7日ほどお待ちください。"
       : "お問い合わせ内容を送信できませんでした。お手数ですが再度お試しください。";
   }
 };
