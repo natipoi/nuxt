@@ -17,6 +17,12 @@ h1 {margin-bottom:0;}
 .hero-image img {width: 100%;}
 .main-body {margin: 30px;}
 .createdat {color: #969594; font-size: 1.0rem; text-align: right;margin-bottom: 5px;}
+ @media screen and (min-width: 720px) {
+
+    .h1-box, .hero-image,.main-body,.createdat   {max-width: 700px; margin: 0 auto;}
+
+
+}
 </style>
 
 <script>
