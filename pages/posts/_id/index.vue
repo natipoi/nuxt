@@ -35,7 +35,11 @@ export default {
   async asyncData({ params, payload }) {
     // IDをキーに記事を取得
     const entry = await client.getEntry(params.id)
-
+    var date = new Date(entry.fields.publishDate);
+    var year = date.getFullYear();
+    var month = date.getMonth() + 1;
+    var day = date.getDate();
+    entry.fields.publishDate = `${year}/${month}/${day}`
     console.log(entry)
     return {
       post: entry

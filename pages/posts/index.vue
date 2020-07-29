@@ -17,42 +17,6 @@
           </div>
         </nuxt-link></h2>
       </li>
-      <li v-for="post in posts" class="blog-box">
-        <nuxt-link :to="`/posts/${post.sys.id}`">
-          <div class="blog-image">
-            <img :src="post.fields.heroImage.fields.file.url" :alt="post.fields.heroImage.fields.description">
-          </div>
-          <div class="blog-content">
-            <h2 class="h2">{{ post.fields.title }}</h2>
-            <p class="createdAt">{{ post.fields.publishDate }}</p>
-            <p class="description">{{ post.fields.description }}</p>
-          </div>
-        </nuxt-link></h2>
-      </li>
-      <li v-for="post in posts" class="blog-box">
-        <nuxt-link :to="`/posts/${post.sys.id}`">
-          <div class="blog-image">
-            <img :src="post.fields.heroImage.fields.file.url" :alt="post.fields.heroImage.fields.description">
-          </div>
-          <div class="blog-content">
-            <h2 class="h2">{{ post.fields.title }}</h2>
-            <p class="createdAt">{{ post.fields.publishDate }}</p>
-            <p class="description">{{ post.fields.description }}</p>
-          </div>
-        </nuxt-link></h2>
-      </li>
-      <li v-for="post in posts" class="blog-box">
-        <nuxt-link :to="`/posts/${post.sys.id}`">
-          <div class="blog-image">
-            <img :src="post.fields.heroImage.fields.file.url" :alt="post.fields.heroImage.fields.description">
-          </div>
-          <div class="blog-content">
-            <h2 class="h2">{{ post.fields.title }}</h2>
-            <p class="createdAt">{{ post.fields.publishDate }}</p>
-            <p class="description">{{ post.fields.description }}</p>
-          </div>
-        </nuxt-link></h2>
-      </li>
     </ul>
   </main>
 </template>
@@ -104,6 +68,14 @@ h2 {font-size: 1.1rem}
       ]).then(([entries, posts]) => {
         // return data that should be available
         // in the template
+        for (var post of posts.items) {
+        　var date = new Date(post.fields.publishDate);
+          var year = date.getFullYear();
+          var month = date.getMonth() + 1;
+          var day = date.getDate();
+          post.fields.publishDate = `${year}/${month}/${day}`
+
+        }
         return {
           person: entries.items[0],
           posts: posts.items
