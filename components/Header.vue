@@ -7,6 +7,7 @@
         </div>
         <ul class="header-menu-common" id="header-menu">
             <li><a href="/about/">About</a></li>
+            <li><a href="/posts/">Blog</a></li>
             <li><a href="/contact/">Contact</a></li>
         </ul>
         <ul class="header-menu-common header-sns-icon sns-icon only-pc">
