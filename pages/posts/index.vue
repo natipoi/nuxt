@@ -2,11 +2,11 @@
 
   <main class="main-blogs">
     <div class="heading-box">
-        <h1>Blog</h1>
+        <h1 class="h1">Blog</h1>
     </div>
     <ul class="blogs-box">
       <li v-for="post in posts" class="blog-box">
-        <nuxt-link :to="`/posts/${post.sys.id}`">
+        <nuxt-link :to="`/posts/${post.fields.slug}`">
           <div class="blog-image">
             <img :src="post.fields.heroImage.fields.file.url" :alt="post.fields.heroImage.fields.description">
           </div>
@@ -24,7 +24,7 @@
 <style>
 ul {list-style: none;}
 a {color: #010000;}
-h1::after {content:"Fitpoi運営チームの心の声"; font-size: 0.8rem; color: #969594;padding-left: 10px;font-weight: 400;}
+.h1::after {content:"Fitpoi運営チームの心の声"; font-size: 0.8rem; color: #969594;padding-left: 10px;font-weight: 400;}
 
 .heading-box {margin: 0 30px 30px;}
 .blog-box {margin-bottom: 50px;}

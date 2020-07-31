@@ -1,6 +1,11 @@
 
 require("dotenv").config();
 const config = require('./.contentful.json')
+const contentful = require('contentful')
+const client = contentful.createClient({
+  space: config.CTF_SPACE_ID,
+  accessToken: config.CTF_CDA_ACCESS_TOKEN
+});
 
 export default {
   /*
@@ -19,7 +24,10 @@ export default {
    */
 
   head: {
-    title: "Fitpoi",
+    htmlAttrs: {
+      prefix: "og: http://ogp.me/ns#"
+    },
+    titleTemplate: "%s",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -27,8 +35,29 @@ export default {
       {
         hid: "description",
         name: "description",
-        content: process.env.npm_package_description || ""
+        content:
+          "fitpoi"
+      },
+      {
+        hid: "og:site_name",
+        property: "og:site_name",
+        content: "fitpoi"
+      },
+      { hid: "og:type", property: "og:type", content: "website" },
+      { hid: "og:url", property: "og:url", content: "https://fitpoi.com/" },
+      { hid: "og:title", property: "og:title", content: "Want Six Pack Abs" },
+      {
+        hid: "og:description",
+        property: "og:description",
+        content:
+          "fitpoi"
+      },
+      {
+        hid: "og:image",
+        property: "og:image",
+        content: "~/assets/insta/insta1.jpg"
       }
+      
     ],
     script: [
       {
@@ -90,8 +119,23 @@ export default {
   },
   router: {
     base: "/",
-
   },
   modules: ['@nuxtjs/dotenv'],
+  generate: {
+    routes() {
+      return client
+        .getEntries({
+          content_type: config.CTF_BLOG_POST_TYPE_ID
+        })
+        .then(entries => {
+          return entries.items.map(entry => {
+            return {
+              route: `posts/${entry.fields.slug}`,
+              payload: entry
+            };
+          });
+        });
+    }
+  }
 };
 
