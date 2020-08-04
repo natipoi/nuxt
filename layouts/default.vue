@@ -7,7 +7,7 @@
         <footer>
             <div id="footer">
                 <div class="positive-button-wrap">
-                <a href="" class="positive-button">アプリをダウンロードする</a>
+                <a href="" class="positive-button">COMING SOON</a>
                 </div>
                 
                 <ul id="footer-list1" class="footer-list">
@@ -53,6 +53,8 @@
       .main {margin: 0 30px;}
       table {text-align: left;border-collapse:separate;border-spacing: 10px}
       .box {padding: 30px 0;}
+      .floor-not-yet { position: relative;color: #A2A2A2 !important;text-align: center;}
+
 
       header {background: #fff; padding: 15px;}
       header ul {line-height: 1;}
@@ -63,7 +65,8 @@
       .header-menu-common {height: 100%; }
       .header-menu-common li {display: inline-block; padding: 0 10px;}
       #main-visual {padding: 5px 20px; text-align: center; background-color: #e6e6e6;}
-      .positive-button {display: inline-block; border-radius: 100px; color: #fff; background: #FF4B00; padding: 15px 40px; font-weight: 600; margin: 0px auto 30px; }
+      .positive-button {opacity: 0.5;position:relative;display: inline-block; border-radius: 100px; color: #fff; background: #FF4B00; padding: 15px 40px; font-weight: 600; margin: 0px auto 30px; }
+
       .main-visual-caution {text-align: right;}
       .sns-icon {list-style: none;}
       .header-sns-icon { margin: auto 0;}

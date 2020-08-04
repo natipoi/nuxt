@@ -27,7 +27,7 @@
             <hr class="hr">
             <div class="info-box">
                 <h2>電話番号</h2>
-                <p class="p1-m0">03-xxxx-xxxx</p>
+                <p class="p1-m0">準備中</p>
             </div>
             <hr class="hr">
 

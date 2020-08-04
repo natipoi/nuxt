@@ -5,7 +5,7 @@
           <div id="main-visual">
               <h1>今、あなたに、最適な運動を。</h1>
               <p class="p1">FitpoiはAIが自動で今のあなたに最適なワークアウトメニューを生成＋記録する次世代フィットネスアプリです。</p>
-              <a href="" class="positive-button">アプリをダウンロードする</a>
+              <a href="" class="positive-button">COMING SOON</a>
               <p class="p3 main-visual-caution">*Fitpoiは現在Androidには対応しておりません。</p>
           </div>
 
@@ -67,7 +67,7 @@
           </div>
 
           <div class="positive-button-wrap">
-              <a href="" class="positive-button">アプリをダウンロードする</a>
+              <a href="" class="positive-button">COMING SOON</a>
               <p class="p3">最初の3ワークアウトは無料！</p>
           </div>
           
