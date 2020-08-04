@@ -89,7 +89,7 @@
       .only-pc {display: none;}
       @media screen and (min-width: 720px) {
           .only-pc {display: block;}
-          /* html {font-size: 15px;} */
+          
           .main {max-width: 700px; margin: 0 auto 80px}
           header {padding: 25px;}
           #header-logo svg {zoom: 1.3}

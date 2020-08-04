@@ -15,7 +15,7 @@
             <p class="createdAt">{{ post.fields.publishDate }}</p>
             <p class="description">{{ post.fields.description }}</p>
           </div>
-        </nuxt-link></h2>
+        </nuxt-link>
       </li>
     </ul>
   </main>

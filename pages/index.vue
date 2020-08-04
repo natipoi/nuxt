@@ -44,15 +44,13 @@
               </div>
               <!-- app's description-->
               <div class="app-description">
-                  <p class="p1">あなたの</p>
+                  <p class="p1">ワークアウト中は直感的な画面で、</p>
                   <ul>
-                      <li>筋肉の疲労度</li>
-                      <li>運動のゴール</li>
-                      <li>運動の経験</li>
-                      <li>過去の運動履歴</li>
-                      <li>持っている器具</li>
+                      <li>セット</li>
+                      <li>回数 / 秒数</li>
+                      <li>重量</li>
                   </ul>
-                  <p class="p1">をAIが学習し、常に最も効率の良いワークアウトメニューを生成。</p>
+                  <p class="p1">のスムーズな記録をサポート。</p>
               </div>
           </div>
 
@@ -64,15 +62,7 @@
               </div>
               <!-- app's description-->
               <div class="app-description">
-                  <p class="p1">あなたの</p>
-                  <ul>
-                      <li>筋肉の疲労度</li>
-                      <li>運動のゴール</li>
-                      <li>運動の経験</li>
-                      <li>過去の運動履歴</li>
-                      <li>持っている器具</li>
-                  </ul>
-                  <p class="p1">をAIが学習し、常に最も効率の良いワークアウトメニューを生成。</p>
+                  <p class="p1">ヘルスケアと連動して、日々のワークアウトを効果的にトラッキング。</p>
               </div>
           </div>
 

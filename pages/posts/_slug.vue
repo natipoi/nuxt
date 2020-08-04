@@ -13,7 +13,7 @@
 
 <style>
 .h1-box {margin: 0 30px;}
-h1:after {content:""}
+
 h1 {margin-bottom:0;}
 .hero-image img {width: 100%;}
 .main-body {margin: 30px;}
