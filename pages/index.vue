@@ -99,7 +99,7 @@
 </template>
 <style>
     .main-section { position: relative;background: url(~assets/top-sp.png) top left / 100% auto no-repeat;}
-    .main-section:before {position: absolute; content: ""; bottom:0px;left:0;right:0; height: 70px;background: linear-gradient(transparent, rgb(246 241 241));}
+
     #insta-hashtag {padding: 20px; margin: 0 auto;}
     #insta-box {background-color: #fff; }
     #insta-images-wrap {position: relative; white-space: nowrap; overflow: hidden; }
@@ -123,7 +123,7 @@
         .insta-images-wrap-arrow {width: 87.5px}
         #insta-images li {width: 175px;}
         .main-section { margin: 0 auto;}
-        #main-visual {background-color: transparent;}
+        #main-visual {background-color: transparent; height: calc(100vw * 0.4);max-height: 550px;}
         .main-visual-caution {display: none;}
         .break-span {display:block;}
 
