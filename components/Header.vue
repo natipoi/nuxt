@@ -18,3 +18,8 @@
     </div>
 </header>
 </template>
+
+<style>
+#header-wrap a {color: rgb(150 149 148) !important;}
+
+</style>
