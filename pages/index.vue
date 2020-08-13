@@ -116,7 +116,7 @@
     .arrow-right::before {content: "\f105"; }
 
     @media screen and (min-width: 720px) {
-    .main-section { position: relative;background: url(/_nuxt/assets/top-pc.png) top left / 100% auto no-repeat;}
+    .main-section { position: relative;background: url(~assets/top-pc.png) top left / 100% auto no-repeat;}
         #insta-hashtag{ padding-left: 87.5px;padding-right: 87.5px;}
         #insta-images {transform: translateX(87.5px);height: 175px;}
         #insta-box .sns-icon {font-size: 1.5rem;}
