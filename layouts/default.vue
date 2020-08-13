@@ -64,7 +64,7 @@
       #header-menu {margin: auto 0 auto auto; margin-left: auto; }
       .header-menu-common {height: 100%; }
       .header-menu-common li {display: inline-block; padding: 0 10px;}
-      #main-visual {padding: 5px 20px; text-align: center; background-color: #e6e6e6;}
+      #main-visual {padding: 5px 20px; text-align: center; }
       .positive-button {opacity: 0.5;position:relative;display: inline-block; border-radius: 100px; color: #fff; background: #FF4B00; padding: 15px 40px; font-weight: 600; margin: 0px auto 30px; }
 
       .main-visual-caution {text-align: right;}
@@ -92,7 +92,7 @@
       .only-pc {display: none;}
       @media screen and (min-width: 720px) {
           .only-pc {display: block;}
-          
+          #main-visual {padding: 5px 20px 20px; text-align: center; }
           .main {max-width: 700px; margin: 0 auto 80px}
           header {padding: 25px;}
           #header-logo svg {zoom: 1.3}

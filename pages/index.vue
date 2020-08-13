@@ -4,14 +4,13 @@
       <section class="main-section">
           <div id="main-visual">
               <h1>今、あなたに、最適な運動を。</h1>
-              <p class="p1">FitpoiはAIが自動で今のあなたに最適なワークアウトメニューを生成＋記録する次世代フィットネスアプリです。</p>
+              <p class="p1">FitpoiはAIが自動で今のあなたに最適なワークアウトメニューを<span class="break-span"></span>生成＋記録する次世代フィットネスアプリです。</p>
               <a href="" class="positive-button">COMING SOON</a>
               <p class="p3 main-visual-caution">*Fitpoiは現在Androidには対応しておりません。</p>
           </div>
+          <div class="gradation"></div>
 
-          <div class="only-pc main-visual-right">
 
-          </div>
       </section>
 
       <!-- app's introduction -->
@@ -99,7 +98,8 @@
 
 </template>
 <style>
-    
+    .main-section { position: relative;background: url(~assets/top-sp.png) top left / 100% auto no-repeat;}
+    .main-section:before {position: absolute; content: ""; bottom:0px;left:0;right:0; height: 70px;background: linear-gradient(transparent, rgb(246 241 241));}
     #insta-hashtag {padding: 20px; margin: 0 auto;}
     #insta-box {background-color: #fff; }
     #insta-images-wrap {position: relative; white-space: nowrap; overflow: hidden; }
@@ -116,16 +116,16 @@
     .arrow-right::before {content: "\f105"; }
 
     @media screen and (min-width: 720px) {
-
+    .main-section { position: relative;background: url(/_nuxt/assets/top-pc.png) top left / 100% auto no-repeat;}
         #insta-hashtag{ padding-left: 87.5px;padding-right: 87.5px;}
         #insta-images {transform: translateX(87.5px);height: 175px;}
         #insta-box .sns-icon {font-size: 1.5rem;}
         .insta-images-wrap-arrow {width: 87.5px}
         #insta-images li {width: 175px;}
-        .main-section {display: flex; max-width: 900px; margin: 0 auto;}
-        #main-visual {width: 50%; background-color: transparent;}
-        .main-visual-right {flex: 1;background-color: gray;margin: 50px}
+        .main-section { margin: 0 auto;}
+        #main-visual {background-color: transparent;}
         .main-visual-caution {display: none;}
+        .break-span {display:block;}
 
     }
 </style>

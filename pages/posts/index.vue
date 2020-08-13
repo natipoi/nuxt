@@ -68,6 +68,7 @@ h2 {font-size: 1.1rem}
       ]).then(([entries, posts]) => {
         // return data that should be available
         // in the template
+        console.log(posts)
         for (var post of posts.items) {
         　var date = new Date(post.fields.publishDate);
           var year = date.getFullYear();
@@ -78,7 +79,7 @@ h2 {font-size: 1.1rem}
         }
         return {
           person: entries.items[0],
-          posts: posts.items
+          posts: posts.posts.items
         }
       }).catch(console.error)
     }

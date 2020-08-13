@@ -64,7 +64,8 @@ input, textarea, button {border-style: none;outline: none;resize: none;}
 .text-field {background-color: #fff; padding: 20px; margin-bottom: 30px;}
 textarea[id=body]{width: 100%;}
 .submit-button-box {text-align: center;}
-#submit-button {color: #FF4B00; border-bottom: solid 2px #FF4B00; font-size: 1.2rem;padding:10px; font-weight: 900;}
+#submit-button {color: #FF4B00; border-bottom: solid 2px #FF4B00; font-size: 1.2rem;padding:10px; font-weight: 900; background: transparent}
+#submit-button:hover {cursor: pointer;}
 #message-input {width: 100%}
 
 .positive-button {display: none;}
