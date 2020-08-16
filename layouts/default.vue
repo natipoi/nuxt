@@ -92,7 +92,7 @@
       .only-pc {display: none;}
       @media screen and (min-width: 720px) {
           .only-pc {display: block;}
-          #main-visual {padding: 5px 20px 20px; text-align: center; }
+          #main-visual {padding-top: calc(100vw * 0.1);padding-left: 20px;padding-right: 20px; text-align: center; zoom: 1.2;}
           .main {max-width: 700px; margin: 0 auto 80px}
           header {padding: 25px;}
           #header-logo svg {zoom: 1.3}
