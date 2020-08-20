@@ -120,7 +120,13 @@ export default {
   router: {
     base: "/",
   },
-  modules: ['@nuxtjs/dotenv'],
+  modules: [
+    '@nuxtjs/dotenv',
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-148428453-8'
+    }]
+
+  ],
   generate: {
     routes() {
       return client
