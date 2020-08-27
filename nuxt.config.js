@@ -36,7 +36,7 @@ export default {
         hid: "description",
         name: "description",
         content:
-          "fitpoi"
+          "FitpoiはAIが自動で今のあなたに最適なワークアウトメニューを生成＋記録する次世代フィットネスアプリです。"
       },
       {
         hid: "og:site_name",
@@ -45,12 +45,12 @@ export default {
       },
       { hid: "og:type", property: "og:type", content: "website" },
       { hid: "og:url", property: "og:url", content: "https://fitpoi.com/" },
-      { hid: "og:title", property: "og:title", content: "Want Six Pack Abs" },
+      { hid: "og:title", property: "og:title", content: "今、あなたに、最適な運動を。" },
       {
         hid: "og:description",
         property: "og:description",
         content:
-          "fitpoi"
+          "FitpoiはAIが自動で今のあなたに最適なワークアウトメニューを生成＋記録する次世代フィットネスアプリです。"
       },
       {
         hid: "og:image",
