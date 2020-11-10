@@ -1,76 +1,94 @@
 <template>
   <main>
       <!-- main visual -->
-      <section class="main-section">
+      <section class="main-section inner">
           <div id="main-visual">
-              <h1>今、あなたに、最適な運動を。</h1>
-              <p class="p1">FitpoiはAIが自動で今のあなたに最適なワークアウトメニューを<span class="break-span"></span>生成＋記録する次世代フィットネスアプリです。</p>
-              <AppDownloadButton />
-              <p class="p3 main-visual-caution">*Fitpoiは現在Androidには対応しておりません。</p>
+            <div class="main-title">
+                <h1> 運動しよう。</h1>
+            </div>
+            <div class="main-text">
+                <p class="p1">三日坊主のあなたへ</p>
+                <p class="p2">アプリを通じてあなたの運動モチベーションを維持します。 あなたが当たり前のように運動をするその日まで、いつもそばから怠惰なあなたを刺激させていただきます。</p>
+            </div>
           </div>
       </section>
+      <div class="app-btn main-app-btn"><AppDownloadButton /></div>
+      
 
       <!-- app's introduction -->
-      <section class="section">
-          <!-- app's feature-->
-          <div class="app-feature">
-              <!-- app's image-->
-              <div class="app-image">
-                  <img src="~/assets/sp1.jpeg" width="100%">
-              </div>
-              <!-- app's description-->
-              <div class="app-description">
-                  <p class="p1">あなたの</p>
-                  <ul>
-                      <li>筋肉の疲労度</li>
-                      <li>運動のゴール</li>
-                      <li>運動の経験</li>
-                      <li>過去の運動履歴</li>
-                      <li>持っている器具</li>
-                  </ul>
-                  <p class="p1">をAIが学習し、常に最も効率の良いワークアウトメニューを生成。</p>
-              </div>
-          </div>
-
-          <!-- app's feature-->
-          <div class="app-feature">
-              <!-- app's image-->
-              <div class="app-image">
-                  <img src="~/assets/sp2.jpeg" width="100%">
-              </div>
-              <!-- app's description-->
-              <div class="app-description">
-                  <p class="p1">ワークアウト中は直感的な画面で、</p>
-                  <ul>
-                      <li>セット</li>
-                      <li>回数 / 秒数</li>
-                      <li>重量</li>
-                  </ul>
-                  <p class="p1">のスムーズな記録をサポート。</p>
-              </div>
-          </div>
-
-          <!-- app's feature-->
-          <div class="app-feature">
-              <!-- app's image-->
-              <div class="app-image">
-                  <img src="~/assets/sp3.jpeg" width="100%">
-              </div>
-              <!-- app's description-->
-              <div class="app-description">
-                  <p class="p1">ヘルスケアと連動して、日々のワークアウトを効果的にトラッキング。</p>
-              </div>
-          </div>
-
-          <div class="positive-button-wrap">
-              <AppDownloadButton />
-              <p class="p3">最初の3ワークアウトは無料！</p>
-          </div>
+      <section class="motivation-section inner">
           
+              <div class="common-title">
+                  <h2>モチベ維持の3大要素<span>「共通・通知・競争」</span></h2>
+              </div>
+              <div class="motivation-content">
+                  <div class="motivation-item">
+                      <div class="motivation-left">
+                        <div class="motivation-item-title">
+                          共有
+                        </div>
+                        <div class="motivation-img-sp">
+                            <img src="../entry1.png" alt="">
+                        </div>
+                        <p class="motivation-item-text">
+                          達成感は人に共有することで初めて感じられるものです。みんなに共有して「がんばったね！」と声をかけてもらうことでモチベーションを維持しましょう。
+                        </p>
+                      </div>
+                      <div class="motivation-right">
+                          <img src="../entry1.png" alt="">
+                      </div>
+                  </div>
+                  <div class="motivation-item">
+                      <div class="motivation-left">
+                        <div class="motivation-item-title">
+                          通知
+                        </div>
+                        <div class="motivation-img-sp">
+                            <img src="../entry1.png" alt="">
+                        </div>
+                        <p class="motivation-item-text">
+                          人は怠惰です。当たり前の生活はそう簡単には変わりません。当たり前の生活の中で通知を受けることでモチベーションを維持しましょう。
+                        </p>
+                      </div>
+                      <div class="motivation-right">
+                         <img src="../entry1.png" alt="">
+                      </div>
+                  </div>
+                  <div class="motivation-item">
+                      <div class="motivation-left">
+                        <div class="motivation-item-title">
+                          競争
+                        </div>
+                        <div class="motivation-img-sp">
+                            <img src="../entry1.png" alt="">
+                        </div>
+                        <p class="motivation-item-text">
+                          「負けたくない」その想いは強力です。友達だけでなく、不特定多数のFitpoiユーザーと競争することでモチベーションを維持しましょう。
+                        </p>
+                      </div>
+                      <div class="motivation-right">
+                          <img src="../entry1.png" alt="">
+                      </div>
+                  </div>
+              </div>         
       </section>
+      <div class="app-btn"><AppDownloadButton /></div>
+    　
 
+    <section class="news-section inner">
+        <div class="common-title">
+             <h2>ニュース<span>Fitpoiの最新情報</span></h2>
+        </div>
+        ニュースが入ります<br>
+        ニュースが入ります<br>
+        ニュースが入ります<br>
+        ニュースが入ります<br>
+    </section>
+    <div class="app-btn"><AppDownloadButton /></div>
+      
       <!-- instagram section -->
-      <section class="section" id="insta-section">
+      <!-- <section class="news-section inner" id="insta-section">
+          
           <div id="insta-hashtag">
               <p class="p4">#fitpoi</p>
           </div>
@@ -88,24 +106,39 @@
               <li><a href="https://www.facebook.com/fitpoi" class="fb"></a></li>
               <li><a href="https://twitter.com/Fitpoi1" class="twitter"></a></li>
           </ul>
-      </section>
+          <div class="app-btn"><AppDownloadButton /></div>
+      </section> -->
 
   </main>
 
 </template>
 <style>
+/* 松原追記分CSS */
+.inner{margin: 0 80px;}
+#main-visual{display: flex; justify-content: space-around;}
+.main-title{width: 50%;}
+.main-title h1{font-size: 3.0em;}
+.main-text{width: 380px; text-align: left;}
+.main-text .p1{margin-bottom: 30px; font-size: 24px;}
+.main-text .p2{color: #000000;}
+.app-btn{text-align: right;}
+.motivation-section{margin-top: 100px;}
+.motivation-item{display: flex; justify-content: space-between; padding-bottom: 50px;}
+.motivation-left{width: 40%;}
+.motivation-img-sp{display: none;}
+.motivation-item-title{font-size:14vw;color:rgb(150 149 148);font-weight: bold;}
+.motivation-right img{width:100%;　max-width: 100%;　height: auto;}
+.news-section{margin-top: 100px;}
+.news-section{margin-bottom: 50px;}
 
-#main-visual {padding: 5px 20px; text-align: center; }
-.main-visual-caution {text-align: right;}
+/* 元々あったCSSなので一応残しておきます */
 .app-feature {display: flex; width: 100%; align-items:center; margin: 60px 0;}
 .app-image {width: 50%; padding: 0 30px;}
 .app-description {flex: 1; padding-right: 30px;}
 .app-description p {margin: 0;}
 .app-description ul {margin: 10px 0;}
-.positive-button-wrap {text-align: center; margin: 0 auto 20px;}
-
-
-.main-section { position: relative;background: url(~assets/top-sp.png) top left / 100% auto no-repeat;}
+.positive-button-wrap {text-align: right; margin: 0 auto 20px;}
+.main-section { position: relative;}
 #insta-hashtag {padding: 20px; margin: 0 auto;}
 #insta-section {background-color: #fff; }
 #insta-images-wrap {position: relative; white-space: nowrap; overflow: hidden; }
@@ -120,12 +153,10 @@
 .arrow-left::before, .arrow-right::before{font-family: "Font Awesome 5 Free"; font-weight: 900; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 30px; color: #969594}
 .arrow-left::before {content: "\f104"; }
 .arrow-right::before {content: "\f105"; }
-
-@media screen and (min-width: 720px) {
-    #main-visual {padding-top: calc(100vw * 0.1);padding-left: 20px;padding-right: 20px; text-align: center; zoom: 1.2;}
+@media screen and (max-width: 720px) {
     .app-image {width: 40%;}
     .app-description {padding-left: 50px}
-    .main-section { position: relative;background: url(~assets/top-pc.png) top left / 100% auto no-repeat;}
+    .main-section { position: relative;}
     #insta-hashtag{ padding-left: 87.5px;padding-right: 87.5px;}
     #insta-images {transform: translateX(87.5px);height: 175px;}
     #insta-section .sns-icon {font-size: 1.5rem;}
@@ -136,6 +167,24 @@
     .main-visual-caution {display: none;}
     .break-span {display:block;}
 }
+
+/* 松原追記分CSS */
+@media screen and (max-width: 768px){
+ .inner{margin: 0 15px;}
+ #main-visual{display: block;}
+ .main-title{width: 100%;}
+.main-text{width: 100%; }
+.main-app-btn{margin-top: 180px;}
+.motivation-section{padding-top: 60px;}
+.motivation-item{display: block; }
+.motivation-left{width: 100%;}
+.motivation-img-sp{display: block;}
+.motivation-img-sp img{width:100%;　max-width: 100%;　height: auto; margin-bottom: 30px;} 
+.motivation-item-title{font-size: 130px; }
+.motivation-right img{display: none;}
+.news-section{margin: 130px 15px 50px 15px;}
+}
+
 </style>
 
 <script>
@@ -209,5 +258,6 @@ if (process.client) {
         })
     }
 }
+
 
 </script>

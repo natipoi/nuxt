@@ -18,7 +18,7 @@
 </script>
 <style>
 html { background-color: #F6F1F1; color: #000001; font-size: 14px;}
-body {margin: 0 auto; font-family: "San Francisco", Sans-Serif;}
+body {margin: 0 auto; font-family: "San Francisco", Sans-Serif;　overflow: hidden;}
 body * {margin: 0; padding: 0; box-sizing: border-box;}
 a {text-decoration: none; color: #969594}
 .section {max-width: 700px; margin: 0 auto;}
@@ -36,16 +36,21 @@ p {margin-bottom: 30px;font-weight: 400; font-size: 1.0rem; line-height: 2.0;}
 table {text-align: left;border-collapse:separate;border-spacing: 10px}
 .box {padding: 30px 0;}
 .only-pc {display: none;}
+/* 共通タイトル */
+.common-title{border-left: 5px solid #000000; padding: 0px 0px 40px 15px;}
+.common-title h2{font-size: 24px;}
+.common-title span{margin-left: 30px;}
+
+
+
+
 
 .sns-icon {list-style: none;}
 .sns-icon li a {font-family: "Font Awesome 5 Brands"; font-weight: 900; display: block;text-align: center;}
 .insta::before {content: '\f16d'; }
 .fb::before {content: '\f39e';}
 .twitter::before {content: '\f099';}
-@media screen and (min-width: 720px) {
-    .only-pc {display: block;}
-    .main {max-width: 700px; margin: 0 auto 80px}
-}
+
   </style>
 
 
