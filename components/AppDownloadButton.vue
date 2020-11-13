@@ -8,15 +8,9 @@
 </template>
 
 <style>
-.app-button{text-align: right;
-    max-width: 1000px;margin: 0 auto;}
+.app-button{text-align: right;max-width: 1000px;margin: 0 auto;}
 /*下線を作る為の要素 */
-.positive-button {
-color: #FF4B00; 
-font-weight: bold; 
-font-size: 24px; 
-    position: relative;
-}
+.positive-button {color: #FF4B00; font-weight: bold; font-size: 24px; position: relative;}
 .positive-button:after {
     background-color: #FF4B00; /* 線色 */
     border-radius: 5px; /* 線幅の半分 */
@@ -32,19 +26,10 @@ font-size: 24px;
 /* .app-button{
 position: relative;} */
 /*下線を作る為の要素 */
-.positive-button {
-font-weight: bold; 
-font-size: 18px; 
-}
-.app-button {
-    margin-right: 20px;
-}
-.positive-button:after {
-        width: 500px;
-}
-/* .positive-button:after {
-    width: 250px;
-} */
+.positive-button {font-weight: bold; font-size: 18px; }
+.app-button {margin-right: 20px;}
+.positive-button:after {width: 500px;}
+
 }
 
 

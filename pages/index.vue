@@ -134,7 +134,6 @@
 </template>
 <style>
 /* 松原追記分CSS */
-/* .inner{margin: 0 80px;} */
 #main-visual{width: 100%; display: flex; justify-content: space-around;position: absolute; left: 50%; transform: translate(-50%, -50%);top: 70%;}
 .main-section { position: relative;height: 50vh;}
 .main-title{width: 60%;}
@@ -143,19 +142,16 @@
 .main-text .p1{margin-bottom: 30px; font-size: 24px;}
 .main-text .p2{color: #000000;}
 .app-btn{text-align: right;}
-/* .motivation-section{margin-top: 100px;} */
 .motivation-item{display: flex; justify-content: space-between; padding-bottom: 50px;}
 .motivation-left{width: 50%; margin-right: 50px;}
 .motivation-right {flex: 1;}
 .motivation-img-sp{display: none;}
 .motivation-item-title{font-size:11vw;color:rgb(150 149 148);font-weight: bold;}
 .motivation-right img{width:100%; max-width: 100%; height: auto;}
-/* .news-section{margin-top: 100px;} */
 .news-section{margin-bottom: 50px;}
-/* .main-app-btn{position: absolute; bottom: 0; right: 0;} */
 
 /* 元々あったCSSなので一応残しておきます */
-.app-feature {display: flex; width: 100%; align-items:center; margin: 60px 0;}
+/* .app-feature {display: flex; width: 100%; align-items:center; margin: 60px 0;}
 .app-image {width: 50%; padding: 0 30px;}
 .app-description {flex: 1; padding-right: 30px;}
 .app-description p {margin: 0;}
@@ -175,51 +171,18 @@
 .arrow-right {right: 0;}
 .arrow-left::before, .arrow-right::before{font-family: "Font Awesome 5 Free"; font-weight: 900; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 30px; color: #969594}
 .arrow-left::before {content: "\f104"; }
-.arrow-right::before {content: "\f105"; }
+.arrow-right::before {content: "\f105"; } */
 .news-all {text-align: center;color: #FF4B00; font-weight: 600; font-size: 1.2rem;display: block}
-
-.news-wrap {
-    position: relative;
-    background: #fff;
-    padding: 25px 50px;
-    border-radius: 10px;
-    width: 90%;
-    margin: 0 auto 30px;
-}
+.news-wrap {position: relative;background: #fff;padding: 25px 50px;border-radius: 10px;width: 90%;margin: 0 auto 30px;}
 .news-wrap:after{ content: "\f105"; font-family: "Font Awesome 5 Free"; color: #FF4B00; font-weight: 600; display: block;text-align: center; position: absolute; top: 50%; right: 50px; transform: translateY(-50%);font-size: 25px;}
-.news-wrap p {
-    display: inline-block;
-    margin-bottom: 0;
-}
-.news-date {
-    font-weight: 600;
-    margin-right: 40px;
-}
-.news-wrap:last-child:after {
-    content: "";
-}
-
-/* @media screen and (max-width: 720px) {
-    .app-image {width: 40%;}
-    .app-description {padding-left: 50px}
-    .main-section { position: relative;height: 50vh;}
-    #insta-hashtag{ padding-left: 87.5px;padding-right: 87.5px;}
-    #insta-images {transform: translateX(87.5px);height: 175px;}
-    #insta-section .sns-icon {font-size: 1.5rem;}
-    .insta-images-wrap-arrow {width: 87.5px}
-    #insta-images li {width: 175px;}
-    .main-section { margin: 0 auto;}
-    #main-visual {background-color: transparent;max-height: 550px;}
-    .main-visual-caution {display: none;}
-    .break-span {display:block;}
-} */
-
+.news-wrap p {display: inline-block;margin-bottom: 0;}
+.news-date {font-weight: 600;margin-right: 40px;}
+.news-wrap:last-child:after {content: "";}
 /* 松原追記分CSS */
 @media screen and (max-width: 768px){
-/* .inner{margin: 0 15px;} */
 .main-title h1{margin-bottom: 10px;text-align: left;}
- #main-visual{display: block;top: 50%;}
- .main-section { position: relative;padding-bottom:0;margin-bottom: 20px;height: 65vh;}
+#main-visual{display: block;top: 50%;}
+.main-section { position: relative;padding-bottom:0;margin-bottom: 20px;height: 65vh;}
 .main-title{width: 100%;}
 .main-title h1{font-size: 3.0em;}
 .main-text{width: 100%; }
@@ -227,7 +190,7 @@
 .motivation-item{display: block; }
 .motivation-left{width: 100%;}
 .motivation-img-sp{display: block;}
-.motivation-img-sp img{width:100%;　max-width: 100%;　height: auto; margin-bottom: 30px;} 
+.motivation-img-sp img{width:100%; max-width: 100%; height: auto; margin-bottom: 30px;} 
 .motivation-item-title{font-size: 130px; }
 .motivation-right img{display: none;}
 .news-wrap {margin-right: -20px;}

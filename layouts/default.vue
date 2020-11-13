@@ -38,6 +38,7 @@ table {text-align: left;border-collapse:separate;border-spacing: 10px}
 .box {padding: 30px 0;}
 .only-pc {display: block;}
 .only-sp {display: none;}
+
 /* 共通タイトル */
 .common-title{border-left: 5px solid #000000; padding: 0px 0px 40px 15px;margin-left: -5px;}
 .common-title h2{font-size: 24px;}
