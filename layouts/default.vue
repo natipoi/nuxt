@@ -17,8 +17,8 @@
   }
 </script>
 <style>
-html { background-color: #F6F1F1; color: #000001; font-size: 14px;overflow-x:hidden;}
-body {font-family: "San Francisco", Sans-Serif;box-sizing: border-box;margin:0;}
+html { background-color: #F6F1F1; color: #000001; font-size: 14px;overflow-x:hidden;padding:0;}
+body {font-family: "San Francisco", Sans-Serif;box-sizing: border-box;margin:0;padding:0;clear:both;}
 body * {margin: 0; padding: 0; box-sizing: border-box;}
 a {text-decoration: none;color: #000;}
 .section {position:relative; max-width: 1000px; margin: 0 auto 130px; padding-bottom: 100px;}
