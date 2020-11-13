@@ -32,7 +32,7 @@ p {margin-bottom: 30px;font-weight: 400; font-size: 1.0rem; line-height: 2.0;}
 .p1-m0 {font-size: 1.1rem; margin:0}
 .p3 {font-size: 0.8rem; color: #969594}
 .p4 {font-size: 1.0rem; font-weight: 900; margin:0;}
-.main {margin: 0 30px;}
+.main {margin: 0 30px;    overflow: hidden;}
 table {text-align: left;border-collapse:separate;border-spacing: 10px}
 .box {padding: 30px 0;}
 .only-pc {display: block;}
