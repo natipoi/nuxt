@@ -8,14 +8,14 @@
 </template>
 
 <style>
-.app-button{ position: absolute;
-    bottom: 0;
-    right: 0;}
+.app-button{text-align: right;
+    max-width: 1000px;margin: 0 auto;}
 /*下線を作る為の要素 */
 .positive-button {
 color: #FF4B00; 
 font-weight: bold; 
 font-size: 24px; 
+    position: relative;
 }
 .positive-button:after {
     background-color: #FF4B00; /* 線色 */
@@ -35,6 +35,9 @@ position: relative;} */
 .positive-button {
 font-weight: bold; 
 font-size: 18px; 
+}
+.app-button {
+    margin-right: 20px;
 }
 .positive-button:after {
         width: 500px;

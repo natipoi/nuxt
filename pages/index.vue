@@ -1,7 +1,8 @@
 <template>
   <main>
       <!-- main visual -->
-      <section class="main-section inner section">
+      <section class="inner section">
+          <div class="inner-section main-section">
           <div id="main-visual">
             <div class="main-title">
                 <h1> 運動しよう。</h1>
@@ -11,6 +12,7 @@
                 <p class="p2">アプリを通じてあなたの運動モチベーションを維持します。 あなたが当たり前のように運動をするその日まで、いつもそばから怠惰なあなたを刺激させていただきます。</p>
             </div>
           </div>
+          </div>
           <AppDownloadButton />
       </section>
       
@@ -18,6 +20,7 @@
 
       <!-- app's introduction -->
       <section class="motivation-section inner section">
+          <div class="inner-section">
           
               <div class="common-title">
                   <h2>モチベ維持の3大要素<span>「共通・通知・競争」</span></h2>
@@ -72,30 +75,33 @@
                       </div>
                   </div>
               </div>
+            </div>
               <div class="app-btn"><AppDownloadButton /></div>       
       </section>
       
     　
 
     <section class="news-section inner section">
-        <div class="common-title">
-             <h2>ニュース<span>Fitpoiの最新情報</span></h2>
-        </div>
-        <div>
-            <div class="news-wrap">
-                <p class="news-date">2020/11/11</p><p class="news-heading">ニュースが入ります</p>
+        <div class="inner-section">
+            <div class="common-title">
+                <h2>ニュース<span>Fitpoiの最新情報</span></h2>
             </div>
-            <div class="news-wrap">
-                <p class="news-date">2020/11/11</p><p class="news-heading">ニュースが入ります</p>
-            </div>
-            <div class="news-wrap">
-                <p class="news-date">2020/11/11</p><p class="news-heading">ニュースが入ります</p>
-            </div>
-            <div class="news-wrap">
-                <p class="news-date">2020/11/11</p><p class="news-heading">ニュースが入ります</p>
-            </div>
-            <div class="news-wrap"><a class="news-all" href="">全てのニュースを見る</a></div>
+            <div>
+                <div class="news-wrap">
+                    <p class="news-date">2020/11/11</p><p class="news-heading">ニュースが入ります</p>
+                </div>
+                <div class="news-wrap">
+                    <p class="news-date">2020/11/11</p><p class="news-heading">ニュースが入ります</p>
+                </div>
+                <div class="news-wrap">
+                    <p class="news-date">2020/11/11</p><p class="news-heading">ニュースが入ります</p>
+                </div>
+                <div class="news-wrap">
+                    <p class="news-date">2020/11/11</p><p class="news-heading">ニュースが入ります</p>
+                </div>
+                <div class="news-wrap"><a class="news-all" href="">全てのニュースを見る</a></div>
 
+            </div>
         </div>
         <div class="app-btn"><AppDownloadButton /></div>
     </section>
@@ -129,7 +135,8 @@
 <style>
 /* 松原追記分CSS */
 /* .inner{margin: 0 80px;} */
-#main-visual{width: 100%; display: flex; justify-content: space-around;position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+#main-visual{width: 100%; display: flex; justify-content: space-around;position: absolute; left: 50%; transform: translate(-50%, -50%);top: 70%;}
+.main-section { position: relative;height: 50vh;}
 .main-title{width: 50%;}
 .main-title h1{font-size: 5.0em;}
 .main-text{flex: 1.0;text-align: left;}
@@ -153,7 +160,7 @@
 .app-description p {margin: 0;}
 .app-description ul {margin: 10px 0;}
 .positive-button-wrap {text-align: right; margin: 0 auto 20px;}
-.main-section { position: relative;height: 65vh;}
+
 #insta-hashtag {padding: 20px; margin: 0 auto;}
 #insta-section {background-color: #fff; }
 #insta-images-wrap {position: relative; white-space: nowrap; overflow: hidden; }
@@ -211,19 +218,17 @@
 /* .inner{margin: 0 15px;} */
 .main-title h1{margin-bottom: 10px;}
  #main-visual{display: block;top: 50%;}
- .main-section { position: relative;padding-bottom:0;margin-bottom: 20px;}
+ .main-section { position: relative;padding-bottom:0;margin-bottom: 20px;height: 65vh;}
 .main-title{width: 100%;}
 .main-title h1{font-size: 3.0em;}
 .main-text{width: 100%; }
 .main-app-btn{margin-top: 180px;}
-.motivation-section{padding-top: 60px;}
 .motivation-item{display: block; }
 .motivation-left{width: 100%;}
 .motivation-img-sp{display: block;}
 .motivation-img-sp img{width:100%;　max-width: 100%;　height: auto; margin-bottom: 30px;} 
 .motivation-item-title{font-size: 130px; }
 .motivation-right img{display: none;}
-.news-section{margin: 130px 15px 50px 15px;}
 .news-wrap {margin-right: -20px;}
 .news-wrap p {display: block;}
 }
