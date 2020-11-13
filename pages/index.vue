@@ -137,8 +137,8 @@
 /* .inner{margin: 0 80px;} */
 #main-visual{width: 100%; display: flex; justify-content: space-around;position: absolute; left: 50%; transform: translate(-50%, -50%);top: 70%;}
 .main-section { position: relative;height: 50vh;}
-.main-title{width: 50%;}
-.main-title h1{font-size: 5.0em;}
+.main-title{width: 60%;}
+.main-title h1{font-size: 5.0em;text-align:center;}
 .main-text{flex: 1.0;text-align: left;}
 .main-text .p1{margin-bottom: 30px; font-size: 24px;}
 .main-text .p2{color: #000000;}
@@ -217,7 +217,7 @@
 /* 松原追記分CSS */
 @media screen and (max-width: 768px){
 /* .inner{margin: 0 15px;} */
-.main-title h1{margin-bottom: 10px;}
+.main-title h1{margin-bottom: 10px;text-align: left;}
  #main-visual{display: block;top: 50%;}
  .main-section { position: relative;padding-bottom:0;margin-bottom: 20px;height: 65vh;}
 .main-title{width: 100%;}

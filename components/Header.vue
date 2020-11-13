@@ -52,7 +52,8 @@ header ul {line-height: 1;}
 #header-logo a {display: inherit;}
 #header-menu {margin: auto 0 auto auto; margin-left: auto; }
 .header-menu-common {height: 100%; }
-.header-menu-common li {display: inline-block; padding: 0 10px;}
+.header-menu-common li {display: inline-block; padding: 0 20px;}
+.header-menu-common li:last-child {padding-right: 0;}
 .header-menu-common li a {color: #000 !important;}
 .header-sns-icon { margin: auto 0;}
 
