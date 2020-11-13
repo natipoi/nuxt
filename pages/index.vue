@@ -1,7 +1,7 @@
 <template>
   <main>
       <!-- main visual -->
-      <section class="main-section inner">
+      <section class="main-section inner section">
           <div id="main-visual">
             <div class="main-title">
                 <h1> 運動しよう。</h1>
@@ -11,12 +11,13 @@
                 <p class="p2">アプリを通じてあなたの運動モチベーションを維持します。 あなたが当たり前のように運動をするその日まで、いつもそばから怠惰なあなたを刺激させていただきます。</p>
             </div>
           </div>
+          <div class="app-btn main-app-btn"><AppDownloadButton /></div>
       </section>
-      <div class="app-btn main-app-btn"><AppDownloadButton /></div>
+      
       
 
       <!-- app's introduction -->
-      <section class="motivation-section inner">
+      <section class="motivation-section inner section">
           
               <div class="common-title">
                   <h2>モチベ維持の3大要素<span>「共通・通知・競争」</span></h2>
@@ -70,21 +71,24 @@
                           <img src="../entry1.png" alt="">
                       </div>
                   </div>
-              </div>         
+              </div>
+              <div class="app-btn"><AppDownloadButton /></div>       
       </section>
-      <div class="app-btn"><AppDownloadButton /></div>
+      
     　
 
-    <section class="news-section inner">
+    <section class="news-section inner section">
         <div class="common-title">
              <h2>ニュース<span>Fitpoiの最新情報</span></h2>
         </div>
+        <div>
         ニュースが入ります<br>
         ニュースが入ります<br>
         ニュースが入ります<br>
         ニュースが入ります<br>
+        </div>
+        <div class="app-btn"><AppDownloadButton /></div>
     </section>
-    <div class="app-btn"><AppDownloadButton /></div>
       
       <!-- instagram section -->
       <!-- <section class="news-section inner" id="insta-section">
@@ -114,22 +118,23 @@
 </template>
 <style>
 /* 松原追記分CSS */
-.inner{margin: 0 80px;}
-#main-visual{display: flex; justify-content: space-around;}
+/* .inner{margin: 0 80px;} */
+#main-visual{width: 100%; display: flex; justify-content: space-around;position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 .main-title{width: 50%;}
-.main-title h1{font-size: 3.0em;}
-.main-text{width: 380px; text-align: left;}
+.main-title h1{font-size: 5.0em;}
+.main-text{flex: 1.0;text-align: left;}
 .main-text .p1{margin-bottom: 30px; font-size: 24px;}
 .main-text .p2{color: #000000;}
 .app-btn{text-align: right;}
-.motivation-section{margin-top: 100px;}
+/* .motivation-section{margin-top: 100px;} */
 .motivation-item{display: flex; justify-content: space-between; padding-bottom: 50px;}
-.motivation-left{width: 40%;}
+.motivation-left{width: 70%; margin-right: 20px;}
 .motivation-img-sp{display: none;}
-.motivation-item-title{font-size:14vw;color:rgb(150 149 148);font-weight: bold;}
-.motivation-right img{width:100%;　max-width: 100%;　height: auto;}
-.news-section{margin-top: 100px;}
+.motivation-item-title{font-size:11vw;color:rgb(150 149 148);font-weight: bold;}
+.motivation-right img{width:100%; max-width: 100%; height: auto;}
+/* .news-section{margin-top: 100px;} */
 .news-section{margin-bottom: 50px;}
+/* .main-app-btn{position: absolute; bottom: 0; right: 0;} */
 
 /* 元々あったCSSなので一応残しておきます */
 .app-feature {display: flex; width: 100%; align-items:center; margin: 60px 0;}
@@ -138,7 +143,7 @@
 .app-description p {margin: 0;}
 .app-description ul {margin: 10px 0;}
 .positive-button-wrap {text-align: right; margin: 0 auto 20px;}
-.main-section { position: relative;}
+.main-section { position: relative;height: 65vh;}
 #insta-hashtag {padding: 20px; margin: 0 auto;}
 #insta-section {background-color: #fff; }
 #insta-images-wrap {position: relative; white-space: nowrap; overflow: hidden; }
@@ -156,23 +161,24 @@
 @media screen and (max-width: 720px) {
     .app-image {width: 40%;}
     .app-description {padding-left: 50px}
-    .main-section { position: relative;}
+    .main-section { position: relative;height: 50vh;}
     #insta-hashtag{ padding-left: 87.5px;padding-right: 87.5px;}
     #insta-images {transform: translateX(87.5px);height: 175px;}
     #insta-section .sns-icon {font-size: 1.5rem;}
     .insta-images-wrap-arrow {width: 87.5px}
     #insta-images li {width: 175px;}
     .main-section { margin: 0 auto;}
-    #main-visual {background-color: transparent; height: calc(100vw * 0.4);max-height: 550px;}
+    #main-visual {background-color: transparent;max-height: 550px;}
     .main-visual-caution {display: none;}
     .break-span {display:block;}
 }
 
 /* 松原追記分CSS */
 @media screen and (max-width: 768px){
- .inner{margin: 0 15px;}
- #main-visual{display: block;}
- .main-title{width: 100%;}
+.inner{margin: 0 15px;}
+ #main-visual{display: block;top: 30%;}
+.main-title{width: 100%;}
+.main-title h1{font-size: 3.0em;}
 .main-text{width: 100%; }
 .main-app-btn{margin-top: 180px;}
 .motivation-section{padding-top: 60px;}

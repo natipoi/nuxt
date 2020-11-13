@@ -20,8 +20,8 @@
 html { background-color: #F6F1F1; color: #000001; font-size: 14px;}
 body {margin: 0 auto; font-family: "San Francisco", Sans-Serif;}
 body * {margin: 0; padding: 0; box-sizing: border-box;}
-a {text-decoration: none; color: #969594}
-.section {max-width: 700px; margin: 0 auto;}
+a {text-decoration: none;color: #000;}
+.section {position:relative; max-width: 1000px; margin: 0 auto 130px; padding-bottom: 30px;}
 ul {list-style-type: disc;list-style-position: inside;margin-bottom: 20px; line-height: 2.0}
 h1 {margin: 40px 0; font-size: 1.4rem;}
 h2 {font-size: 1.2rem;margin-bottom: 5px;}
@@ -37,11 +37,13 @@ table {text-align: left;border-collapse:separate;border-spacing: 10px}
 .box {padding: 30px 0;}
 .only-pc {display: none;}
 /* 共通タイトル */
-.common-title{border-left: 5px solid #000000; padding: 0px 0px 40px 15px;}
+.common-title{border-left: 5px solid #000000; padding: 0px 0px 40px 15px;margin-left: -5px;}
 .common-title h2{font-size: 24px;}
 .common-title span{margin-left: 30px;}
 
-
+@media screen and (max-width: 901px) {
+.section {margin-right: 20px;margin-left: 20px;}
+}
 
 
 
