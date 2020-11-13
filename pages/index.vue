@@ -11,7 +11,7 @@
                 <p class="p2">アプリを通じてあなたの運動モチベーションを維持します。 あなたが当たり前のように運動をするその日まで、いつもそばから怠惰なあなたを刺激させていただきます。</p>
             </div>
           </div>
-          <div class="app-btn main-app-btn"><AppDownloadButton /></div>
+          <AppDownloadButton />
       </section>
       
       
@@ -191,7 +191,7 @@
     content: "";
 }
 
-@media screen and (max-width: 720px) {
+/* @media screen and (max-width: 720px) {
     .app-image {width: 40%;}
     .app-description {padding-left: 50px}
     .main-section { position: relative;height: 50vh;}
@@ -204,12 +204,14 @@
     #main-visual {background-color: transparent;max-height: 550px;}
     .main-visual-caution {display: none;}
     .break-span {display:block;}
-}
+} */
 
 /* 松原追記分CSS */
 @media screen and (max-width: 768px){
-.inner{margin: 0 15px;}
+/* .inner{margin: 0 15px;} */
+.main-title h1{margin-bottom: 10px;}
  #main-visual{display: block;top: 50%;}
+ .main-section { position: relative;padding-bottom:0;margin-bottom: 20px;}
 .main-title{width: 100%;}
 .main-title h1{font-size: 3.0em;}
 .main-text{width: 100%; }

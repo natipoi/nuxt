@@ -36,6 +36,9 @@ position: relative;} */
 font-weight: bold; 
 font-size: 18px; 
 }
+.positive-button:after {
+        width: 500px;
+}
 /* .positive-button:after {
     width: 250px;
 } */

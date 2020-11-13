@@ -17,7 +17,7 @@
   }
 </script>
 <style>
-html { background-color: #F6F1F1; color: #000001; font-size: 14px;}
+html { background-color: #F6F1F1; color: #000001; font-size: 14px;overflow-x:hidden;}
 body {margin: 0 auto; font-family: "San Francisco", Sans-Serif;}
 body * {margin: 0; padding: 0; box-sizing: border-box;}
 a {text-decoration: none;color: #000;}
@@ -55,7 +55,6 @@ table {text-align: left;border-collapse:separate;border-spacing: 10px}
 @media screen and (max-width: 768px) {
   .only-pc {display: none;}
   .only-sp {display: block;}
-  .section {overflow: hidden;}
 }
 
   </style>
