@@ -32,14 +32,14 @@
                           共有
                         </div>
                         <div class="motivation-img-sp">
-                            <img src="../entry1.png" alt="">
+                            <img src="~assets/top/top1.png" alt="">
                         </div>
                         <p class="motivation-item-text">
                           達成感は人に共有することで初めて感じられるものです。みんなに共有して「がんばったね！」と声をかけてもらうことでモチベーションを維持しましょう。
                         </p>
                       </div>
                       <div class="motivation-right">
-                          <img src="../entry1.png" alt="">
+                          <img src="~assets/top/top1.png" alt="">
                       </div>
                   </div>
                   <div class="motivation-item">
@@ -48,14 +48,14 @@
                           通知
                         </div>
                         <div class="motivation-img-sp">
-                            <img src="../entry1.png" alt="">
+                            <img src="~assets/top/top2.png" alt="">
                         </div>
                         <p class="motivation-item-text">
                           人は怠惰です。当たり前の生活はそう簡単には変わりません。当たり前の生活の中で通知を受けることでモチベーションを維持しましょう。
                         </p>
                       </div>
                       <div class="motivation-right">
-                         <img src="../entry1.png" alt="">
+                         <img src="~assets/top/top2.png" alt="">
                       </div>
                   </div>
                   <div class="motivation-item">
@@ -64,14 +64,14 @@
                           競争
                         </div>
                         <div class="motivation-img-sp">
-                            <img src="../entry1.png" alt="">
+                            <img src="~assets/top/top3.png" alt="">
                         </div>
                         <p class="motivation-item-text">
                           「負けたくない」その想いは強力です。友達だけでなく、不特定多数のFitpoiユーザーと競争することでモチベーションを維持しましょう。
                         </p>
                       </div>
                       <div class="motivation-right">
-                          <img src="../entry1.png" alt="">
+                          <img src="~assets/top/top3.png" alt="">
                       </div>
                   </div>
               </div>
@@ -145,7 +145,8 @@
 .app-btn{text-align: right;}
 /* .motivation-section{margin-top: 100px;} */
 .motivation-item{display: flex; justify-content: space-between; padding-bottom: 50px;}
-.motivation-left{width: 70%; margin-right: 20px;}
+.motivation-left{width: 50%; margin-right: 50px;}
+.motivation-right {flex: 1;}
 .motivation-img-sp{display: none;}
 .motivation-item-title{font-size:11vw;color:rgb(150 149 148);font-weight: bold;}
 .motivation-right img{width:100%; max-width: 100%; height: auto;}
