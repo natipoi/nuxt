@@ -21,7 +21,7 @@ html { background-color: #F6F1F1; color: #000001; font-size: 14px;}
 body {margin: 0 auto; font-family: "San Francisco", Sans-Serif;width: 100%;overflow-x: hidden;}
 body * {margin: 0; padding: 0; box-sizing: border-box;}
 a {text-decoration: none;color: #000;}
-.section {position:relative; max-width: 1000px; margin: 0 auto 130px; padding-bottom: 30px;}
+.section {position:relative; max-width: 1000px; margin: 0 auto 130px; padding-bottom: 100px;}
 ul {list-style-type: disc;list-style-position: inside;margin-bottom: 20px; line-height: 2.0}
 h1 {margin: 40px 0; font-size: 1.4rem;}
 h2 {font-size: 1.2rem;margin-bottom: 5px;}

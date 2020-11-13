@@ -82,10 +82,20 @@
              <h2>ニュース<span>Fitpoiの最新情報</span></h2>
         </div>
         <div>
-        ニュースが入ります<br>
-        ニュースが入ります<br>
-        ニュースが入ります<br>
-        ニュースが入ります<br>
+            <div class="news-wrap">
+                <p class="news-date">2020/11/11</p><p class="news-heading">ニュースが入ります</p>
+            </div>
+            <div class="news-wrap">
+                <p class="news-date">2020/11/11</p><p class="news-heading">ニュースが入ります</p>
+            </div>
+            <div class="news-wrap">
+                <p class="news-date">2020/11/11</p><p class="news-heading">ニュースが入ります</p>
+            </div>
+            <div class="news-wrap">
+                <p class="news-date">2020/11/11</p><p class="news-heading">ニュースが入ります</p>
+            </div>
+            <div class="news-wrap"><a class="news-all" href="">全てのニュースを見る</a></div>
+
         </div>
         <div class="app-btn"><AppDownloadButton /></div>
     </section>
@@ -158,6 +168,29 @@
 .arrow-left::before, .arrow-right::before{font-family: "Font Awesome 5 Free"; font-weight: 900; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 30px; color: #969594}
 .arrow-left::before {content: "\f104"; }
 .arrow-right::before {content: "\f105"; }
+.news-all {text-align: center;color: #FF4B00; font-weight: 600; font-size: 1.2rem;display: block}
+
+.news-wrap {
+    position: relative;
+    background: #fff;
+    padding: 25px 50px;
+    border-radius: 10px;
+    width: 90%;
+    margin: 0 auto 30px;
+}
+.news-wrap:after{ content: "\f105"; font-family: "Font Awesome 5 Free"; color: #FF4B00; font-weight: 600; display: block;text-align: center; position: absolute; top: 50%; right: 50px; transform: translateY(-50%);font-size: 25px;}
+.news-wrap p {
+    display: inline-block;
+    margin-bottom: 0;
+}
+.news-date {
+    font-weight: 600;
+    margin-right: 40px;
+}
+.news-wrap:last-child:after {
+    content: "";
+}
+
 @media screen and (max-width: 720px) {
     .app-image {width: 40%;}
     .app-description {padding-left: 50px}
@@ -189,6 +222,8 @@
 .motivation-item-title{font-size: 130px; }
 .motivation-right img{display: none;}
 .news-section{margin: 130px 15px 50px 15px;}
+.news-wrap {margin-right: -20px;}
+.news-wrap p {display: block;}
 }
 
 </style>
