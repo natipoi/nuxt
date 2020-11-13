@@ -18,7 +18,7 @@
 </script>
 <style>
 html { background-color: #F6F1F1; color: #000001; font-size: 14px;}
-body {margin: 0 auto; font-family: "San Francisco", Sans-Serif;width: 100%;overflow-x: hidden;}
+body {margin: 0 auto; font-family: "San Francisco", Sans-Serif;width: 100vw;overflow-x: hidden;}
 body * {margin: 0; padding: 0; box-sizing: border-box;}
 a {text-decoration: none;color: #000;}
 .section {position:relative; max-width: 1000px; margin: 0 auto 130px; padding-bottom: 100px;}
