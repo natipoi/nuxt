@@ -17,7 +17,7 @@
   }
 </script>
 <style>
-html { background-color: #F6F1F1; color: #000001; font-size: 14px;}
+html { background-color: #F6F1F1; color: #000001; font-size: 14px;width: 100vw;}
 body {margin: 0 auto; font-family: "San Francisco", Sans-Serif;width: 100vw;overflow-x: hidden;}
 body * {margin: 0; padding: 0; box-sizing: border-box;}
 a {text-decoration: none;color: #000;}
