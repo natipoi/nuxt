@@ -194,7 +194,7 @@
 @media screen and (max-width: 720px) {
     .app-image {width: 40%;}
     .app-description {padding-left: 50px}
-    .main-section { position: relative;height: 40vh;}
+    .main-section { position: relative;height: 50vh;}
     #insta-hashtag{ padding-left: 87.5px;padding-right: 87.5px;}
     #insta-images {transform: translateX(87.5px);height: 175px;}
     #insta-section .sns-icon {font-size: 1.5rem;}
@@ -209,7 +209,7 @@
 /* 松原追記分CSS */
 @media screen and (max-width: 768px){
 .inner{margin: 0 15px;}
- #main-visual{display: block;top: 30%;}
+ #main-visual{display: block;top: 50%;}
 .main-title{width: 100%;}
 .main-title h1{font-size: 3.0em;}
 .main-text{width: 100%; }
