@@ -194,7 +194,7 @@
 @media screen and (max-width: 720px) {
     .app-image {width: 40%;}
     .app-description {padding-left: 50px}
-    .main-section { position: relative;height: 50vh;}
+    .main-section { position: relative;height: 40vh;}
     #insta-hashtag{ padding-left: 87.5px;padding-right: 87.5px;}
     #insta-images {transform: translateX(87.5px);height: 175px;}
     #insta-section .sns-icon {font-size: 1.5rem;}
