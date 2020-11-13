@@ -17,8 +17,8 @@
   }
 </script>
 <style>
-html { background-color: #F6F1F1; color: #000001; font-size: 14px;width: 100vw;}
-body {margin: 0 auto; font-family: "San Francisco", Sans-Serif;width: 100vw;overflow-x: hidden;}
+html { background-color: #F6F1F1; color: #000001; font-size: 14px;}
+body {margin: 0 auto; font-family: "San Francisco", Sans-Serif;}
 body * {margin: 0; padding: 0; box-sizing: border-box;}
 a {text-decoration: none;color: #000;}
 .section {position:relative; max-width: 1000px; margin: 0 auto 130px; padding-bottom: 100px;}
@@ -55,6 +55,7 @@ table {text-align: left;border-collapse:separate;border-spacing: 10px}
 @media screen and (max-width: 768px) {
   .only-pc {display: none;}
   .only-sp {display: block;}
+  .section {overflow: hidden;}
 }
 
   </style>
