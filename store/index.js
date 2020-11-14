@@ -89,7 +89,7 @@ export const statusList = [
       title: "運動しないとかまじありえん。運動した方がいいって自分でわかってんでしょ？周りのみんなも運動してるよ。サボってる暇なんてないからな。ほら、運動すんぞ。",
       image: "🤬",
       fontSize: "2.0em",
-      fontSizeSp: "2.0rem"
+      fontSizeSp: "1.5rem"
 
   }
 ]
