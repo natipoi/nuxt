@@ -3,7 +3,7 @@
         <div class="progress-wrap">
             
             <div class="progress">
-                <div class="progress-drag" id="js-drag-pinch" @click="clickEmoji()" @mouseleave="dragLeave" @mousemove="dragOver" @mouseend="dragEnd" @dragleave="dragLeave" @dragover="dragOver" @dragend="dragEnd" draggable=true></div>
+                <div class="progress-drag" id="js-drag-pinch" @click="clickEmoji()"  @touchleave="dragLeave" @touchmove="dragOver" @touchend="dragEnd" @dragleave="dragLeave" @dragover="dragOver" @dragend="dragEnd" draggable=true></div>
                 <div class="progress-bar-wrap scroll_hide">
                     <div class="progress-bar">
                         <div class="in-progress-bar"></div>
