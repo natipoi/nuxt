@@ -152,7 +152,7 @@ export default {
                 })
             }
         )
-        return Promise.all([stories, products]).then(values => {
+        return Promise.all([posts, news]).then(values => {
           return [...values[0], values[1]];
         });
     }
