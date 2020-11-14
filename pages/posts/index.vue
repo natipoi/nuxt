@@ -1,6 +1,7 @@
 <template>
 
-  <main class="main-blogs">
+  <section class="section">
+    <div class="inner-section">
     <div class="heading-box">
         <h1 class="h1">Blog</h1>
     </div>
@@ -18,14 +19,15 @@
         </nuxt-link>
       </li>
     </ul>
-  </main>
+    </div>
+  </section>
 </template>
 
 <style>
 ul {list-style: none;}
 a {color: #010000;}
 .h1::after {content:"Fitpoi運営チームの心の声"; font-size: 0.8rem; color: #969594;padding-left: 10px;font-weight: 400;}
-
+.inner-section {max-width:800px;}
 .heading-box {margin: 0 30px 30px;}
 .blog-box {margin-bottom: 50px;}
 .createdAt {color:#969594;font-size: 0.9rem;text-align: right;margin-bottom: 5px;}

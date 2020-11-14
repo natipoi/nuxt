@@ -1,50 +1,31 @@
 <template>
-
-  <main class="main-blogs">
-    <div class="heading-box">
+  <section class="section">
+    
+    <div class="inner-section">
+        <div class="heading-box">
         <h1 class="h1">News</h1>
     </div>
-    <ul class="blogs-box">
-      <li v-for="(post, key) in news" :key="key" class="blog-box">
-        <nuxt-link :to="`/news/${post.fields.slug}`">
-          <!-- <div class="blog-image">
-            <img :src="post.fields.heroImage.fields.file.url" :alt="post.fields.heroImage.fields.description">
-          </div> -->
-          <div class="blog-content">
-            <h2 class="h2">{{ post.fields.title }}</h2>
-            <p class="createdAt">{{ post.fields.createdAt }}</p>
-            <p class="description">{{ post.fields.description }}</p>
-          </div>
-        </nuxt-link>
-      </li>
-    </ul>
-  </main>
+        <div>
+            <News
+                :news="news"
+            />
+        </div>
+    </div>
+  </section>
 </template>
 
 <style>
-ul {list-style: none;}
-a {color: #010000;}
-.h1::after {content:"Fitpoiからのお知らせ"; font-size: 0.8rem; color: #969594;padding-left: 10px;font-weight: 400;}
-
-.heading-box {margin: 0 30px 30px;}
-.blog-box {margin-bottom: 50px;}
-.createdAt {color:#969594;font-size: 0.9rem;text-align: right;margin-bottom: 5px;}
-.description {display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3; overflow: hidden;}
-.blog-image {position: relative; width: 100%; height: calc(100vw * 0.55); overflow:hidden;margin-bottom: 20px;}
-.blog-image img {width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
-.blog-content {margin: 0 30px;}
-@media screen and (min-width: 720px) {
-h2 {font-size: 1.1rem}
-.heading-box {margin-left: 0;}
-.main-blogs {max-width: 700px;margin: 0 auto;}
-.blogs-box {display: flex; justify-content: flex-start; flex-wrap: wrap;}
-.blogs-box li {width: 30%; margin-right: 5%;}
-.blogs-box li:nth-child(3n) {margin-right: 0;}
-.blog-image {height: 150px;}
-.blog-content {margin: 0;}
+.h1 {   margin-bottom: 50px;}
+.h1::after {
+    content:"Fitpoiからのお知らせ";
+    font-size: 0.8rem;
+    color: #969594;
+    padding-left: 10px;
+    font-weight: 400;
+ 
 }
+.inner-section {max-width: 800px;}
+.news-wrap {width: 100%!important}
 </style>
 
 <script>

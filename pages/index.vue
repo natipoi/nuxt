@@ -87,11 +87,14 @@
                 <h2>ニュース<span>Fitpoiの最新情報</span></h2>
             </div>
             <div>
-                <div v-for="(post, key) in news" :key="key" :class='{"news-wrap": true}'>
+                <News
+                    :news="news"
+                />
+                <!-- <div v-for="(post, key) in news" :key="key" :class='{"news-wrap": true}'>
                     <nuxt-link :to="`/news/${post.fields.slug}`">
                         <p class="news-date">{{ post.fields.createdAt }}</p><p class="news-heading">{{ post.fields.title }}</p>
                     </nuxt-link>
-                </div>
+                </div> -->
                 <!-- <div class="news-wrap">
                     <p class="news-date">2020/11/11</p><p class="news-heading">ニュースが入ります</p>
                 </div>
@@ -101,7 +104,7 @@
                 <div class="news-wrap">
                     <p class="news-date">2020/11/11</p><p class="news-heading">ニュースが入ります</p>
                 </div> -->
-                <div class="news-wrap"><a class="news-all" href="">全てのニュースを見る</a></div>
+                <div class="news-wrap news-all"><a href="/news/" class="news-link">全てのニュースを見る</a></div>
 
             </div>
         </div>
@@ -174,12 +177,9 @@
 .arrow-left::before, .arrow-right::before{font-family: "Font Awesome 5 Free"; font-weight: 900; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 30px; color: #969594}
 .arrow-left::before {content: "\f104"; }
 .arrow-right::before {content: "\f105"; } */
-.news-all {text-align: center;color: #FF4B00; font-weight: 600; font-size: 1.2rem;display: block}
-.news-wrap {position: relative;background: #fff;padding: 25px 50px;border-radius: 10px;width: 90%;margin: 0 auto 30px;}
-.news-wrap:after{ content: "\f105"; font-family: "Font Awesome 5 Free"; color: #FF4B00; font-weight: 600; display: block;text-align: center; position: absolute; top: 50%; right: 50px; transform: translateY(-50%);font-size: 25px;}
-.news-wrap p {display: inline-block;margin-bottom: 0;}
-.news-date {font-weight: 600;margin-right: 40px;}
-.news-wrap:last-child:after {content: "";}
+.news-all:after {content:""}
+.news-all a {text-align: center;color: #FF4B00; font-weight: 600; font-size: 1.2rem;display: block}
+
 /* 松原追記分CSS */
 @media screen and (max-width: 768px){
 .main-title h1{margin-bottom: 10px;text-align: left;}
@@ -195,19 +195,24 @@
 .motivation-img-sp img{width:100%; max-width: 100%; height: auto; margin-bottom: 30px;} 
 .motivation-item-title{font-size: 130px; }
 .motivation-right img{display: none;}
-.news-wrap {margin-right: -20px;}
-.news-wrap p {display: block;}
+/* .news-wrap {margin-right: -20px;}
+.news-wrap p {display: block;} */
 }
 
 </style>
 
 <script>
+
+import News from '~/components/News.vue'
 import {createClient} from '~/plugins/contentful.js'
 
   const client = createClient()
 
   export default {
     // `env` is available in the context object
+    components: {
+      News
+    },
     asyncData ({env}) {
       return Promise.all([
         // fetch the owner of the blog
