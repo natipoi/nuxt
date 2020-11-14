@@ -1,6 +1,6 @@
 <template>
-        <main class="main">
-
+        <section class="section">
+            <div class="inner-section">
             <div class="info-box">
                 <h1>運営会社</h1>
             </div>
@@ -30,9 +30,10 @@
                 <p class="p1-m0">03-5931-8537</p>
             </div>
             <hr class="hr">
+            </div>
 
 
-        </main>
+        </section>
 </template>
 <style>
 .hr {margin: 25px 0; width: 15%;}
