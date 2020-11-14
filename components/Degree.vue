@@ -3,7 +3,7 @@
         <div class="progress-wrap">
             
             <div class="progress">
-                <div class="progress-drag" id="js-drag-pinch" @click="clickEmoji()"  @touchleave="dragLeave" @touchmove="dragOver" @touchend="dragEnd" @dragleave="dragLeave" @dragover="dragOver" @dragend="dragEnd" draggable=true></div>
+                <div class="progress-drag" id="js-drag-pinch" @click="moveBar" @touchleave="dragLeave" @touchmove="dragOver" @touchend="dragEnd" @dragleave="dragLeave" @dragover="dragOver" @dragend="dragEnd" draggable=true touchable=true></div>
                 <div class="progress-bar-wrap scroll_hide">
                     <div class="progress-bar">
                         <div class="in-progress-bar"></div>
@@ -15,7 +15,7 @@
                     
                 </div>
                 
-                <div class="progress-emoji-wrap">
+                <div class="progress-emoji-wrap" @click="clickEmoji()">
                     <p class="progress-emoji">{{ $store.state.nowStatus.image }}</p>
                     <p class="degree-text scroll_hide">挑発度 {{ $store.state.nowStatus.degree }}%</p>
                 </div>
@@ -104,7 +104,7 @@ line-height: 1.2;
     top: 0%;
     left: 0%;
     bottom: 0%;
-    right: 0%;
+    right: 30%;
     z-index: 100;
 }
 @media screen and (max-width: 768px) {
@@ -194,6 +194,7 @@ export default {
                     width: "90%"
                 }, 100);
                 $(".scroll_hide").show(100);
+                $("#js-drag-pinch").show();
                 this.bar_show = true
             } else {
                 $(".progress-wrap").animate({
@@ -201,8 +202,21 @@ export default {
                 }, 100);
                 $(".scroll_hide").hide(100);
                 this.bar_show = false
+                $("#js-drag-pinch").hide();
             }
             
+        },
+        moveBar(event){
+            const barMinX = $(".progress-bar").offset().left
+            const barWidth = $(".progress-bar").width()
+            if (this.is_drag === true) {
+                var cursorX = event.clientX;
+                this.rate = Math.round((cursorX - barMinX)/barWidth * 10)* 10;
+                if (this.rate > 100 ) { this.rate = 100 }
+                if (this.rate < 0 ) { this.rate = 0 }
+                $(".progress-pinch").css("left", "calc(" + this.rate + "% - 12px)")
+                $(".in-progress-bar").css("width", "calc(" + this.rate + "% - 12px)")
+            }
         }
     },
     created () {
