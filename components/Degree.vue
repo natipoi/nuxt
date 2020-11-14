@@ -152,17 +152,23 @@ export default {
                     if (this.rate < 0 ) { this.rate = 0 }
                     $(".progress-pinch").css("left", "calc(" + this.rate + "% - 12px)")
                     $(".in-progress-bar").css("width", "calc(" + this.rate + "% - 12px)")
+                    this.$store.dispatch('showDegreeText', this.rate)
+                    if ($(window).width()< 768) {
+                        $(".h1").css("font-size",this.$store.state.nowStatus.fontSizeSp)
+                    } else {
+                        $(".h1").css("font-size",this.$store.state.nowStatus.fontSize)
+                    }
                 }
             }
         },
         dragEnd(){
             this.is_drag = true;
             this.$store.dispatch('showDegreeText', this.rate)
-            if ($(window).width()< 768) {
-                $(".h1").css("font-size",this.$store.state.nowStatus.fontSizeSp)
-            } else {
-                $(".h1").css("font-size",this.$store.state.nowStatus.fontSize)
-            }
+            // if ($(window).width()< 768) {
+            //     $(".h1").css("font-size",this.$store.state.nowStatus.fontSizeSp)
+            // } else {
+            //     $(".h1").css("font-size",this.$store.state.nowStatus.fontSize)
+            // }
             
             
         },
@@ -172,8 +178,12 @@ export default {
         handleScroll () {
             var setTimeoutId;
             if(this.bar_show) {
+                var width = "56px"
+                if ($(window).width() < 768) {
+                    width = "45px"
+                }
                 $(".progress-wrap").animate({
-                    width: "56px"
+                    width: width
                 }, 100);
                 $("#js-drag-pinch").hide();
                 $(".scroll_hide").hide(100);
@@ -201,15 +211,19 @@ export default {
         },
         moveBar(event){
             if (process.client) {
-            const barMinX = $(".progress-bar").offset().left
-            const barWidth = $(".progress-bar").width()
-                if (this.is_drag === true) {
-                    var cursorX = event.clientX;
-                    this.rate = Math.round((cursorX - barMinX)/barWidth * 10)* 10;
-                    if (this.rate > 100 ) { this.rate = 100 }
-                    if (this.rate < 0 ) { this.rate = 0 }
-                    $(".progress-pinch").css("left", "calc(" + this.rate + "% - 12px)")
-                    $(".in-progress-bar").css("width", "calc(" + this.rate + "% - 12px)")
+                if ($(window).width() < 768) {
+                    const barMinX = $(".progress-bar").offset().left
+                    const barWidth = $(".progress-bar").width()
+                    if (this.is_drag === true) {
+                        var cursorX = event.clientX;
+                        this.rate = Math.round((cursorX - barMinX)/barWidth * 10)* 10;
+                        if (this.rate > 100 ) { this.rate = 100 }
+                        if (this.rate < 0 ) { this.rate = 0 }
+                        $(".progress-pinch").css("left", "calc(" + this.rate + "% - 12px)")
+                        $(".in-progress-bar").css("width", "calc(" + this.rate + "% - 12px)")
+                        this.$store.dispatch('showDegreeText', this.rate)
+                        $(".h1").css("font-size",this.$store.state.nowStatus.fontSizeSp)
+                    }
                 }
             }
         }
