@@ -52,9 +52,9 @@
 }
 .progress-bar-wrap {
     position:relative;
-    width: 80%;
-    margin-right: 5px;
     height: 10px;
+    width: 70%;
+    margin-right: 20px;
 }
 .progress-bar {
     position:absolute;
