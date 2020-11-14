@@ -37,6 +37,7 @@
 </template>
 <style>
 .hr {margin: 25px 0; width: 15%;}
+.inner-section {max-width: 800px !important;}
 @media screen and (min-width: 700px) {
 .hr {display: none;}
 .info-box {display: flex; margin-bottom: 20px}
