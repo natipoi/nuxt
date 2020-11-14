@@ -55,6 +55,7 @@ table {text-align: left;border-collapse:separate;border-spacing: 10px}
 }
 
 @media screen and (max-width: 768px) {
+  .p1 {margin-bottom: 10px;}
   .only-pc {display: none;}
   .only-sp {display: block;}
   .section { padding-bottom: 80px;margin-bottom: 20px;}
