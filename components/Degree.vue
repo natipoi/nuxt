@@ -178,10 +178,7 @@ export default {
         handleScroll () {
             var setTimeoutId;
             if(this.bar_show) {
-                var width = "56px"
-                if ($(window).width() < 768) {
-                    width = "45px"
-                }
+                var width = $(window).width() < 768 ? "56px" : "45px";
                 $(".progress-wrap").animate({
                     width: width
                 }, 100);
@@ -200,8 +197,9 @@ export default {
                 $("#js-drag-pinch").show();
                 this.bar_show = true
             } else {
+                var width = $(window).width() < 768 ? "56px" : "45px";
                 $(".progress-wrap").animate({
-                    width: "56px"
+                    width: width
                 }, 100);
                 $(".scroll_hide").hide(100);
                 this.bar_show = false
