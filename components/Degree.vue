@@ -104,7 +104,7 @@ line-height: 1.2;
     top: 0%;
     left: 0%;
     bottom: 0%;
-    right: 30%;
+    right: 20%;
     z-index: 100;
 }
 @media screen and (max-width: 768px) {
