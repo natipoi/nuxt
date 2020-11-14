@@ -41,7 +41,7 @@
 </template>
 
 <style>
-#footer {display: flex; justify-content:space-around; padding-top: calc(100vw * 0.1);padding-left: 20px;padding-right: 20px;}
+#footer {display: flex; justify-content:space-between; max-width: 800px; margin: 0 auto;padding-top: calc(100vw * 0.1);}
 .footer-list{display: flex; }
 .footer-list1 { list-style-type: none; margin-bottom: 20px; margin-right: 30px;}
 .footer-list2 { list-style-type: none; margin-bottom: 20px;}
@@ -54,7 +54,7 @@
 .footer-menu-common li a{font-size: 24px;  color:#000000;}
 .footer-logo-img{text-align: right;}
     @media screen and (max-width: 767px) {
-        #footer{display: block; margin-top: 50px;}
+        #footer{display: block; margin-top: 50px;padding-left: 20px;padding-right: 20px;}
         .footer-list1 li ,.footer-list2 li{margin-bottom: 10px;}
         .footer-list3 {display: block; }
         .footer-list3 li{margin-bottom: 10px;}

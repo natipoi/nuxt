@@ -1,7 +1,8 @@
 <template>
   <main>
       <!-- main visual -->
-      <section class="main-section inner">
+      <section class="inner section">
+          <div class="inner-section main-section">
           <div id="main-visual">
             <div class="main-title">
                 <h1> 運動しよう。</h1>
@@ -11,12 +12,15 @@
                 <p class="p2">アプリを通じてあなたの運動モチベーションを維持します。 あなたが当たり前のように運動をするその日まで、いつもそばから怠惰なあなたを刺激させていただきます。</p>
             </div>
           </div>
+          </div>
+          <AppDownloadButton />
       </section>
-      <div class="app-btn main-app-btn"><AppDownloadButton /></div>
+      
       
 
       <!-- app's introduction -->
-      <section class="motivation-section inner">
+      <section class="motivation-section inner section">
+          <div class="inner-section">
           
               <div class="common-title">
                   <h2>モチベ維持の3大要素<span>「共通・通知・競争」</span></h2>
@@ -28,14 +32,14 @@
                           共有
                         </div>
                         <div class="motivation-img-sp">
-                            <img src="../entry1.png" alt="">
+                            <img src="~assets/top/top1.png" alt="">
                         </div>
                         <p class="motivation-item-text">
                           達成感は人に共有することで初めて感じられるものです。みんなに共有して「がんばったね！」と声をかけてもらうことでモチベーションを維持しましょう。
                         </p>
                       </div>
                       <div class="motivation-right">
-                          <img src="../entry1.png" alt="">
+                          <img src="~assets/top/top1.png" alt="">
                       </div>
                   </div>
                   <div class="motivation-item">
@@ -44,14 +48,14 @@
                           通知
                         </div>
                         <div class="motivation-img-sp">
-                            <img src="../entry1.png" alt="">
+                            <img src="~assets/top/top2.png" alt="">
                         </div>
                         <p class="motivation-item-text">
                           人は怠惰です。当たり前の生活はそう簡単には変わりません。当たり前の生活の中で通知を受けることでモチベーションを維持しましょう。
                         </p>
                       </div>
                       <div class="motivation-right">
-                         <img src="../entry1.png" alt="">
+                         <img src="~assets/top/top2.png" alt="">
                       </div>
                   </div>
                   <div class="motivation-item">
@@ -60,31 +64,47 @@
                           競争
                         </div>
                         <div class="motivation-img-sp">
-                            <img src="../entry1.png" alt="">
+                            <img src="~assets/top/top3.png" alt="">
                         </div>
                         <p class="motivation-item-text">
                           「負けたくない」その想いは強力です。友達だけでなく、不特定多数のFitpoiユーザーと競争することでモチベーションを維持しましょう。
                         </p>
                       </div>
                       <div class="motivation-right">
-                          <img src="../entry1.png" alt="">
+                          <img src="~assets/top/top3.png" alt="">
                       </div>
                   </div>
-              </div>         
+              </div>
+            </div>
+              <div class="app-btn"><AppDownloadButton /></div>       
       </section>
-      <div class="app-btn"><AppDownloadButton /></div>
+      
     　
 
-    <section class="news-section inner">
-        <div class="common-title">
-             <h2>ニュース<span>Fitpoiの最新情報</span></h2>
+    <section class="news-section inner section">
+        <div class="inner-section">
+            <div class="common-title">
+                <h2>ニュース<span>Fitpoiの最新情報</span></h2>
+            </div>
+            <div>
+                <div class="news-wrap">
+                    <p class="news-date">2020/11/11</p><p class="news-heading">ニュースが入ります</p>
+                </div>
+                <div class="news-wrap">
+                    <p class="news-date">2020/11/11</p><p class="news-heading">ニュースが入ります</p>
+                </div>
+                <div class="news-wrap">
+                    <p class="news-date">2020/11/11</p><p class="news-heading">ニュースが入ります</p>
+                </div>
+                <div class="news-wrap">
+                    <p class="news-date">2020/11/11</p><p class="news-heading">ニュースが入ります</p>
+                </div>
+                <div class="news-wrap"><a class="news-all" href="">全てのニュースを見る</a></div>
+
+            </div>
         </div>
-        ニュースが入ります<br>
-        ニュースが入ります<br>
-        ニュースが入ります<br>
-        ニュースが入ります<br>
+        <div class="app-btn"><AppDownloadButton /></div>
     </section>
-    <div class="app-btn"><AppDownloadButton /></div>
       
       <!-- instagram section -->
       <!-- <section class="news-section inner" id="insta-section">
@@ -114,31 +134,30 @@
 </template>
 <style>
 /* 松原追記分CSS */
-.inner{margin: 0 80px;}
-#main-visual{display: flex; justify-content: space-around;}
-.main-title{width: 50%;}
-.main-title h1{font-size: 3.0em;}
-.main-text{width: 380px; text-align: left;}
+#main-visual{width: 100%; display: flex; justify-content: space-around;position: absolute; left: 50%; transform: translate(-50%, -50%);top: 70%;}
+.main-section { position: relative;height: 50vh;}
+.main-title{width: 60%;}
+.main-title h1{font-size: 5.0em;text-align:center;}
+.main-text{flex: 1.0;text-align: left;}
 .main-text .p1{margin-bottom: 30px; font-size: 24px;}
 .main-text .p2{color: #000000;}
 .app-btn{text-align: right;}
-.motivation-section{margin-top: 100px;}
 .motivation-item{display: flex; justify-content: space-between; padding-bottom: 50px;}
-.motivation-left{width: 40%;}
+.motivation-left{width: 50%; margin-right: 50px;}
+.motivation-right {flex: 1;}
 .motivation-img-sp{display: none;}
-.motivation-item-title{font-size:14vw;color:rgb(150 149 148);font-weight: bold;}
-.motivation-right img{width:100%;　max-width: 100%;　height: auto;}
-.news-section{margin-top: 100px;}
+.motivation-item-title{font-size:11vw;color:rgb(150 149 148);font-weight: bold;}
+.motivation-right img{width:100%; max-width: 100%; height: auto;}
 .news-section{margin-bottom: 50px;}
 
 /* 元々あったCSSなので一応残しておきます */
-.app-feature {display: flex; width: 100%; align-items:center; margin: 60px 0;}
+/* .app-feature {display: flex; width: 100%; align-items:center; margin: 60px 0;}
 .app-image {width: 50%; padding: 0 30px;}
 .app-description {flex: 1; padding-right: 30px;}
 .app-description p {margin: 0;}
 .app-description ul {margin: 10px 0;}
 .positive-button-wrap {text-align: right; margin: 0 auto 20px;}
-.main-section { position: relative;}
+
 #insta-hashtag {padding: 20px; margin: 0 auto;}
 #insta-section {background-color: #fff; }
 #insta-images-wrap {position: relative; white-space: nowrap; overflow: hidden; }
@@ -152,37 +171,30 @@
 .arrow-right {right: 0;}
 .arrow-left::before, .arrow-right::before{font-family: "Font Awesome 5 Free"; font-weight: 900; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 30px; color: #969594}
 .arrow-left::before {content: "\f104"; }
-.arrow-right::before {content: "\f105"; }
-@media screen and (max-width: 720px) {
-    .app-image {width: 40%;}
-    .app-description {padding-left: 50px}
-    .main-section { position: relative;}
-    #insta-hashtag{ padding-left: 87.5px;padding-right: 87.5px;}
-    #insta-images {transform: translateX(87.5px);height: 175px;}
-    #insta-section .sns-icon {font-size: 1.5rem;}
-    .insta-images-wrap-arrow {width: 87.5px}
-    #insta-images li {width: 175px;}
-    .main-section { margin: 0 auto;}
-    #main-visual {background-color: transparent; height: calc(100vw * 0.4);max-height: 550px;}
-    .main-visual-caution {display: none;}
-    .break-span {display:block;}
-}
-
+.arrow-right::before {content: "\f105"; } */
+.news-all {text-align: center;color: #FF4B00; font-weight: 600; font-size: 1.2rem;display: block}
+.news-wrap {position: relative;background: #fff;padding: 25px 50px;border-radius: 10px;width: 90%;margin: 0 auto 30px;}
+.news-wrap:after{ content: "\f105"; font-family: "Font Awesome 5 Free"; color: #FF4B00; font-weight: 600; display: block;text-align: center; position: absolute; top: 50%; right: 50px; transform: translateY(-50%);font-size: 25px;}
+.news-wrap p {display: inline-block;margin-bottom: 0;}
+.news-date {font-weight: 600;margin-right: 40px;}
+.news-wrap:last-child:after {content: "";}
 /* 松原追記分CSS */
 @media screen and (max-width: 768px){
- .inner{margin: 0 15px;}
- #main-visual{display: block;}
- .main-title{width: 100%;}
+.main-title h1{margin-bottom: 10px;text-align: left;}
+#main-visual{display: block;top: 50%;}
+.main-section { position: relative;padding-bottom:0;margin-bottom: 20px;height: 65vh;}
+.main-title{width: 100%;}
+.main-title h1{font-size: 3.0em;}
 .main-text{width: 100%; }
 .main-app-btn{margin-top: 180px;}
-.motivation-section{padding-top: 60px;}
 .motivation-item{display: block; }
 .motivation-left{width: 100%;}
 .motivation-img-sp{display: block;}
-.motivation-img-sp img{width:100%;　max-width: 100%;　height: auto; margin-bottom: 30px;} 
+.motivation-img-sp img{width:100%; max-width: 100%; height: auto; margin-bottom: 30px;} 
 .motivation-item-title{font-size: 130px; }
 .motivation-right img{display: none;}
-.news-section{margin: 130px 15px 50px 15px;}
+.news-wrap {margin-right: -20px;}
+.news-wrap p {display: block;}
 }
 
 </style>

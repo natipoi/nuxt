@@ -44,7 +44,7 @@ export const actions = {
 
     //そもそもなエラー時
     req.on("error", e => {
-      console.error("errrrroooooo");
+      console.error("err");
       commit("afterSendMessage", false);
     });
 
