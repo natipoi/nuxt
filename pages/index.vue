@@ -87,7 +87,12 @@
                 <h2>ニュース<span>Fitpoiの最新情報</span></h2>
             </div>
             <div>
-                <div class="news-wrap">
+                <div v-for="(post, key) in news" :key="key" :class='{"news-wrap": true}'>
+                    <nuxt-link :to="`/news/${post.fields.slug}`">
+                        <p class="news-date">{{ post.fields.createdAt }}</p><p class="news-heading">{{ post.fields.title }}</p>
+                    </nuxt-link>
+                </div>
+                <!-- <div class="news-wrap">
                     <p class="news-date">2020/11/11</p><p class="news-heading">ニュースが入ります</p>
                 </div>
                 <div class="news-wrap">
@@ -95,10 +100,7 @@
                 </div>
                 <div class="news-wrap">
                     <p class="news-date">2020/11/11</p><p class="news-heading">ニュースが入ります</p>
-                </div>
-                <div class="news-wrap">
-                    <p class="news-date">2020/11/11</p><p class="news-heading">ニュースが入ります</p>
-                </div>
+                </div> -->
                 <div class="news-wrap"><a class="news-all" href="">全てのニュースを見る</a></div>
 
             </div>
@@ -200,6 +202,41 @@
 </style>
 
 <script>
+import {createClient} from '~/plugins/contentful.js'
+
+  const client = createClient()
+
+  export default {
+    // `env` is available in the context object
+    asyncData ({env}) {
+      return Promise.all([
+        // fetch the owner of the blog
+        client.getEntries({
+          'sys.id': env.CTF_PERSON_ID
+        }),
+        // fetch all blog posts sorted by creation date
+        client.getEntries({
+          'content_type': 'news',
+          order: 'sys.createdAt'
+        })
+      ]).then(([entries, news]) => {
+        // return data that should be available
+        // in the template
+        for (var each_news of news.items) {
+        　var date = new Date(each_news.fields.createdAt);
+          var year = date.getFullYear();
+          var month = date.getMonth() + 1;
+          var day = date.getDate();
+          each_news.fields.createdAt = `${year}/${month}/${day}`
+
+        }
+        return {
+          news: news.items
+        }
+      }).catch(console.error)
+    }
+  }
+
 if (process.client) {
     window.onload = function() {
         const imageNum = $("#insta-images").children().length
@@ -273,3 +310,4 @@ if (process.client) {
 
 
 </script>
+

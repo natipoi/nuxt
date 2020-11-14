@@ -2,17 +2,17 @@
 
   <main class="main-blogs">
     <div class="heading-box">
-        <h1 class="h1">Blog</h1>
+        <h1 class="h1">News</h1>
     </div>
     <ul class="blogs-box">
-      <li v-for="(post, key) in posts" :key="key" class="blog-box">
-        <nuxt-link :to="`/posts/${post.fields.slug}`">
-          <div class="blog-image">
+      <li v-for="(post, key) in news" :key="key" class="blog-box">
+        <nuxt-link :to="`/news/${post.fields.slug}`">
+          <!-- <div class="blog-image">
             <img :src="post.fields.heroImage.fields.file.url" :alt="post.fields.heroImage.fields.description">
-          </div>
+          </div> -->
           <div class="blog-content">
             <h2 class="h2">{{ post.fields.title }}</h2>
-            <p class="createdAt">{{ post.fields.publishDate }}</p>
+            <p class="createdAt">{{ post.fields.createdAt }}</p>
             <p class="description">{{ post.fields.description }}</p>
           </div>
         </nuxt-link>
@@ -24,7 +24,7 @@
 <style>
 ul {list-style: none;}
 a {color: #010000;}
-.h1::after {content:"Fitpoi運営チームの心の声"; font-size: 0.8rem; color: #969594;padding-left: 10px;font-weight: 400;}
+.h1::after {content:"Fitpoiからのお知らせ"; font-size: 0.8rem; color: #969594;padding-left: 10px;font-weight: 400;}
 
 .heading-box {margin: 0 30px 30px;}
 .blog-box {margin-bottom: 50px;}
@@ -57,28 +57,25 @@ h2 {font-size: 1.1rem}
     asyncData ({env}) {
       return Promise.all([
         // fetch the owner of the blog
-        client.getEntries({
-          'sys.id': env.CTF_PERSON_ID
-        }),
+
         // fetch all blog posts sorted by creation date
         client.getEntries({
-          'content_type': env.CTF_BLOG_POST_TYPE_ID,
+          'content_type': "news",
           order: 'sys.createdAt'
         })
-      ]).then(([entries, posts]) => {
+      ]).then(([news]) => {
         // return data that should be available
         // in the template
-        for (var post of posts.items) {
-        　var date = new Date(post.fields.publishDate);
+        for (var post of news.items) {
+        　var date = new Date(post.fields.createdAt);
           var year = date.getFullYear();
           var month = date.getMonth() + 1;
           var day = date.getDate();
-          post.fields.publishDate = `${year}/${month}/${day}`
+          post.fields.createdAt = `${year}/${month}/${day}`
 
         }
         return {
-          person: entries.items[0],
-          posts: posts.items
+          news: news.items
         }
       }).catch(console.error)
     }
