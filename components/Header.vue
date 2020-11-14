@@ -22,7 +22,7 @@
                 <ul class="header-sns-menu sns-icon">
                     <li><a href="https://www.instagram.com/fitpoi_app/" class="insta"></a></li>
                     <li><a href="https://www.facebook.com/fitpoi" class="fb"></a></li>
-                    <li><a href="https://twitter.com/Fitpoi1" class="twitter"></a></li>
+                    <li><a href="https://twitter.com/fitpoi_app" class="twitter"></a></li>
                 </ul>
             </div>
         </div>
