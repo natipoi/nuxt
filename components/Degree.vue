@@ -161,6 +161,7 @@ export default {
                 $(".progress-wrap").animate({
                     width: "56px"
                 }, 100);
+                $("#js-drag-pinch").hide();
                 $(".scroll_hide").hide(100);
                 this.bar_show = false
 
