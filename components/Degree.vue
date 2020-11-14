@@ -17,7 +17,7 @@
                 
                 <div class="progress-emoji-wrap" @click="clickEmoji()">
                     <p class="progress-emoji">{{ $store.state.nowStatus.image }}</p>
-                    <p class="degree-text scroll_hide">挑発度 {{ $store.state.nowStatus.degree }}%</p>
+                    <p class="degree-text scroll_hide"><span class="">挑発度</span> {{ $store.state.nowStatus.degree }}%</p>
                 </div>
             </div>
             
@@ -47,7 +47,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    padding: 5px 25px;
+    padding: 0px 25px;
     min-height: 56px;
 }
 .progress-bar-wrap {
@@ -111,6 +111,22 @@ line-height: 1.2;
     .progress-wrap {
         right: 5%;
     }
+    .progress-bar-wrap {
+        width: 70%;
+        margin-right: 30px;
+        height: 10px;
+    }
+    .progress {
+        padding: 0px 15px;
+        min-height: 45px;
+    }
+    .progress-emoji {
+        font-size: 1.7rem;
+    }
+    .degree-text {
+        font-size: 0.7rem;
+    }
+
 }
 </style>
 <script>
@@ -141,9 +157,7 @@ export default {
         },
         dragEnd(){
             this.is_drag = true;
-            console.log(this.rate)
             this.$store.dispatch('showDegreeText', this.rate)
-            console.log(this.$store.state.nowStatus.fontSize)
             if ($(window).width()< 768) {
                 $(".h1").css("font-size",this.$store.state.nowStatus.fontSizeSp)
             } else {
@@ -164,28 +178,6 @@ export default {
                 $("#js-drag-pinch").hide();
                 $(".scroll_hide").hide(100);
                 this.bar_show = false
-
-                // if(setTimeoutId){
-                //     clearTimeout(setTimeoutId) ;
-                // }
-
-                // // 新しくsetTimeoutイベントを設定
-                // setTimeoutId = setTimeout( function(){
-                //     // スクロール終了時の処理内容
-                //     this.destroyed
-                //     if(!this.bar_show) {
-                //         var barH = $(".progress-wrap").height();
-                //         $(".progress-wrap").animate({
-                //             width: "400px"
-                //         }, 100);
-                //         $(".scroll_hide").show(100);
-                //         this.bar_show = true
-                        
-                //     }
-
-                //     // setTimeoutIdを空にする
-                //     setTimeoutId = null;
-                // }, 2000) ;
             }
         },
         clickEmoji(){
