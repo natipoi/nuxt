@@ -157,7 +157,6 @@ export const actions = {
     req.end();
   },
   showDegreeText({commit}, degree) {
-    console.log("ok")
     commit("getStatus", degree)
   }
 };

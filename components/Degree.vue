@@ -164,13 +164,6 @@ export default {
         dragEnd(){
             this.is_drag = true;
             this.$store.dispatch('showDegreeText', this.rate)
-            // if ($(window).width()< 768) {
-            //     $(".h1").css("font-size",this.$store.state.nowStatus.fontSizeSp)
-            // } else {
-            //     $(".h1").css("font-size",this.$store.state.nowStatus.fontSize)
-            // }
-            
-            
         },
         dragLeave(){
             this.is_drag = false;
@@ -178,7 +171,7 @@ export default {
         handleScroll () {
             var setTimeoutId;
             if(this.bar_show) {
-                var width = $(window).width() < 768 ? "56px" : "45px";
+                var width = $(window).width() > 768 ? "56px" : "45px";
                 $(".progress-wrap").animate({
                     width: width
                 }, 100);
@@ -197,7 +190,7 @@ export default {
                 $("#js-drag-pinch").show();
                 this.bar_show = true
             } else {
-                var width = $(window).width() < 768 ? "56px" : "45px";
+                var width = $(window).width() > 768 ? "56px" : "45px";
                 $(".progress-wrap").animate({
                     width: width
                 }, 100);
