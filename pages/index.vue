@@ -5,9 +5,9 @@
           <div class="inner-section main-section">
           <div id="main-visual">
             <div class="main-title">
-                <h1> 運動しよう。</h1>
+                <h1 :class="{ 'h1': true }">{{ $store.state.nowStatus.title }}</h1>
             </div>
-            <div class="main-text">
+            <div class="main-text" @click="showDegree()">
                 <p class="p1">三日坊主のあなたへ</p>
                 <p class="p2">アプリを通じてあなたの運動モチベーションを維持します。 あなたが当たり前のように運動をするその日まで、いつもそばから怠惰なあなたを刺激させていただきます。</p>
             </div>
@@ -133,15 +133,15 @@
           </ul>
           <div class="app-btn"><AppDownloadButton /></div>
       </section> -->
-
+<Degree />
   </main>
 
 </template>
 <style>
 /* 松原追記分CSS */
-#main-visual{width: 100%; display: flex; justify-content: space-around;position: absolute; left: 50%; transform: translate(-50%, -50%);top: 70%;}
+#main-visual{width: 100%; display: flex; justify-content: space-around;position: absolute; left: 50%; transform: translate(-50%, -50%);top: 70%;align-items: center;}
 .main-section { position: relative;height: 50vh;}
-.main-title{width: 60%;}
+.main-title{width: 60%; padding-right: 40px;}
 .main-title h1{font-size: 5.0em;text-align:center;}
 .main-text{flex: 1.0;text-align: left;}
 .main-text .p1{margin-bottom: 30px; font-size: 24px;}
@@ -182,10 +182,10 @@
 
 /* 松原追記分CSS */
 @media screen and (max-width: 768px){
+    .main-title{    padding-right: 0; width: 100%;}
 .main-title h1{margin-bottom: 10px;text-align: left;}
 #main-visual{display: block;top: 50%;}
 .main-section { position: relative;padding-bottom:0;margin-bottom: 20px;height: 65vh;}
-.main-title{width: 100%;}
 .main-title h1{font-size: 3.0em;}
 .main-text{width: 100%; }
 .main-app-btn{margin-top: 180px;}
@@ -202,17 +202,19 @@
 </style>
 
 <script>
-
+import Vuex from 'vuex'
 import News from '~/components/News.vue'
 import {createClient} from '~/plugins/contentful.js'
 
   const client = createClient()
+  
 
   export default {
     // `env` is available in the context object
     components: {
       News
     },
+    
     asyncData ({env}) {
       return Promise.all([
         // fetch the owner of the blog
@@ -222,7 +224,7 @@ import {createClient} from '~/plugins/contentful.js'
         // fetch all blog posts sorted by creation date
         client.getEntries({
           'content_type': 'news',
-          order: 'sys.createdAt'
+           order: 'sys.createdAt'
         })
       ]).then(([entries, news]) => {
         // return data that should be available
@@ -233,17 +235,18 @@ import {createClient} from '~/plugins/contentful.js'
           var month = date.getMonth() + 1;
           var day = date.getDate();
           each_news.fields.createdAt = `${year}/${month}/${day}`
-
         }
         return {
           news: news.items
         }
       }).catch(console.error)
     }
+
   }
 
 if (process.client) {
     window.onload = function() {
+        
         const imageNum = $("#insta-images").children().length
         var windowWidth = $(window).width()
         var now = 1
