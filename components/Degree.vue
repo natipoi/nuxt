@@ -200,15 +200,17 @@ export default {
             
         },
         moveBar(event){
+            if (process.client) {
             const barMinX = $(".progress-bar").offset().left
             const barWidth = $(".progress-bar").width()
-            if (this.is_drag === true) {
-                var cursorX = event.clientX;
-                this.rate = Math.round((cursorX - barMinX)/barWidth * 10)* 10;
-                if (this.rate > 100 ) { this.rate = 100 }
-                if (this.rate < 0 ) { this.rate = 0 }
-                $(".progress-pinch").css("left", "calc(" + this.rate + "% - 12px)")
-                $(".in-progress-bar").css("width", "calc(" + this.rate + "% - 12px)")
+                if (this.is_drag === true) {
+                    var cursorX = event.clientX;
+                    this.rate = Math.round((cursorX - barMinX)/barWidth * 10)* 10;
+                    if (this.rate > 100 ) { this.rate = 100 }
+                    if (this.rate < 0 ) { this.rate = 0 }
+                    $(".progress-pinch").css("left", "calc(" + this.rate + "% - 12px)")
+                    $(".in-progress-bar").css("width", "calc(" + this.rate + "% - 12px)")
+                }
             }
         }
     },
