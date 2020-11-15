@@ -40,9 +40,22 @@ table {text-align: left;border-collapse:separate;border-spacing: 10px}
 .only-sp {display: none;}
 
 /* 共通タイトル */
-.common-title{border-left: 5px solid #000000; padding: 0px 0px 40px 15px;margin-left: -5px;}
+.common-title h2{position: relative; padding:0px 20px 60px 20px;}
+/* 共通タイトルの左線のボーダー */
+.common-title h2:before {
+  position: absolute;
+    background-color: #000000; /* 線色 */
+    border-radius: 5px; /* 線幅の半分 */
+    content: "";
+    display: inline;
+    height: 120px; /* 線の長さ */
+    vertical-align: top;
+    width: 10px; /* 線幅 */
+    top: 0;
+    left: -2%;
+}
 .common-title h2{font-size: 24px;}
-.common-title span{margin-left: 30px;}
+.common-title span{margin-left: 30px; }
 
 .sns-icon {list-style: none;}
 .sns-icon li a {font-family: "Font Awesome 5 Brands"; font-weight: 900; display: block;text-align: center;}
