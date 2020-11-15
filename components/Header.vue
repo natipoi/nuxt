@@ -37,7 +37,7 @@ header ul {line-height: 1;}
 /* ロゴ */
 #header-logo{ display: inherit;zoom: 1.5;z-index: 100;}
 #header-logo a {display: inherit;}
-
+input[id="drawer-check"] {display: none;}
 @media screen and (min-width: 769px) {
 header {padding: 25px;}
 #header-menu-pc {margin: auto 0 auto auto; margin-left: auto; }
@@ -55,7 +55,7 @@ header {padding: 25px;}
 #sp-modal-menu a {color: #000; display: inline-block;padding: 10px; font-size: 1.2rem;}
 
 input[id="drawer-check"]:checked + label + div {transform: none !important;}
-input[id="drawer-check"] {display: none;}
+
 input[id="drawer-check"]:checked + label .menu-bar-wrap:nth-child(1) {transform: rotate(45deg) translateY(3.3px); transition: all 0.3s;}
 input[id="drawer-check"]:checked + label .menu-bar-wrap:nth-child(2) {transform: rotate(-45deg) translateY(-3.3px); transition: all 0.3s;}
 .menu-bar-wrap {transition: all 0.3s;}

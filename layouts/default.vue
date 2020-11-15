@@ -45,16 +45,16 @@ table {text-align: left;border-collapse:separate;border-spacing: 10px}
 .common-title h2:before {
   position: absolute;
     background-color: #000000; /* 線色 */
-    border-radius: 5px; /* 線幅の半分 */
+    border-radius: 3px; /* 線幅の半分 */
     content: "";
     display: inline;
     height: 120px; /* 線の長さ */
     vertical-align: top;
-    width: 10px; /* 線幅 */
+    width: 6px; /* 線幅 */
     top: 0;
     left: -2%;
 }
-.common-title h2{font-size: 24px;}
+.common-title h2{font-size: 1.5rem;}
 .common-title span{margin-left: 30px; }
 
 .sns-icon {list-style: none;}
@@ -72,6 +72,7 @@ table {text-align: left;border-collapse:separate;border-spacing: 10px}
   .only-pc {display: none;}
   .only-sp {display: block;}
   .section { padding-bottom: 80px;margin-bottom: 20px;}
+  .common-title span {display: block;margin-left: 0px !important; }
 }
 
   </style>
