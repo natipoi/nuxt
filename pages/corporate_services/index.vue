@@ -18,7 +18,7 @@
         
         <section class="section">
             <div class="inner-section">
-                <div class="common-title member-title">
+                <div class="common-title">
                     <h2>会員の退会率を改善！ <span>Fitpoi for Gymの提供</span></h2> 
                 </div>
                 <div class="corporate-btn member-btn">
@@ -38,7 +38,7 @@
         <!-- 新規顧客獲得 -->
         <section class="section">
             <div class="inner-section">
-                <div class="common-title new-member-title">
+                <div class="common-title">
                     <h2>新規顧客を獲得！<span>ホームページ・SNS 運用改善</span></h2>
                 </div>
                 <div class="new-member-text">
@@ -68,7 +68,7 @@
         <!-- Fitpoiユーザーに訴求 -->
         <section class="section">
              <div class="inner-section">
-                <div class="common-title member-title">
+                <div class="common-title">
                     <h2>Fitpoiユーザーに訴求！ <span>Fitpoiアプリ内広告掲載</span></h2>
                 </div>
                 <div class="member-text">
@@ -91,6 +91,7 @@
 /* body{background-color: #F6F1F1;} */
 #all{overflow-x: hidden;}
 .section {margin:0;}
+.common-title h2{padding-bottom: 30px;font-weight: normal;}
 /* 法人事業セクション */
 .section-corporate{display: flex; padding: 100px 0px;align-items: flex-end;}
 .corporate-title h1{font-size: 5.0em; margin-top: 0;margin-bottom: 0;line-height: 1;}
@@ -102,8 +103,7 @@
 .member-text .p2{padding-left: 20px;}
 
 /* 新規顧客獲得 */
-.member-title{display: flex;}
-.new-member-title h2{padding-bottom: 30px;font-weight: normal;}
+
 .new-member-text .p2{padding-left: 20px;padding-bottom: 40px;}
 .new-member-services ul{display: flex;padding-left: 20px;}
 .new-member-services ul li{list-style: none;margin-right: 60px;}
@@ -129,18 +129,18 @@
 .corporate-title{width: 100%; }
 .corporate-title h1{font-size: 3.0em; }
 .corporate-text{width: 100%;}
-.member-title span{margin-left: 0;}
+/* .member-title span{margin-left: 0;} */
 .corporate-btn a{font-weight: bold; font-size: 1.1rem;}
 .new-member-section{padding-bottom: 50px; }
-.new-member-title span{margin-left: 0;}
-.new-member-sns-title {font-size: 1.2rem;}
+/* .new-member-title span{margin-left: 0;} */
+/* .new-member-sns-title {font-size: 1.2rem;} */
 .new-member-services ul{display: block;text-align:right;}
 .new-member-services ul li{list-style: none;margin-right: 0px;}
 .new-member-services ul li .p2{margin-bottom:0px;}
 .service-price{font-weight: bold; font-size: 24px; margin-top:0px;}
 .new-member-sns{text-align: right;}
 .sns-price{font-weight: bold; font-size: 24px;text-align:right;}
-.member-title h2 {padding-bottom: 30px;font-weight: normal;}
+/* .member-title h2 {padding-bottom: 30px;font-weight: normal;} */
 .corporate-btn{text-align: right; top:96% ;}
 .corporate-btn p{text-align: right; }
 }
