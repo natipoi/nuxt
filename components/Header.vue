@@ -35,7 +35,7 @@ header {padding: 15px;}
 header ul {line-height: 1;}
 #header-wrap {display: flex; flex-wrap: nowrap; align-items: baseline; max-width: 1000px;margin: 0 auto;}
 /* ロゴ */
-#header-logo{ display: inherit;zoom: 1.5;z-index: 100;}
+#header-logo{ display: inherit;zoom: 1.6;z-index: 100;}
 #header-logo a {display: inherit;}
 input[id="drawer-check"] {display: none;}
 @media screen and (min-width: 769px) {
