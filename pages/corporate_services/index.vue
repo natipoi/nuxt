@@ -1,5 +1,6 @@
 <template>
     <main>
+      <div id="all">
         <!-- 法人事業セクション -->
         <section>
             <div class="section-corporate inner-section">
@@ -20,13 +21,14 @@
                 <div class="common-title member-title">
                     <h2>会員の退会率を改善！ <span>Fitpoi for Gymの提供</span></h2> 
                 </div>
+                <div class="corporate-btn member-btn">
+                    <a href="">問い合わせ・事前申し込みはこちら</a>
+                </div> 
                 <div class="member-text">
                     <p class="p2">Fitpoi for Gymでは各フィットネスクラブの会員様の基本的な情報だけでなく <br class="only-pc"> 日々のトレーニング情報も収集・分析することで、より会員様に寄り添ったクラブ運営を実現します。</p>
                     <p class="p2">※ Fitpoi for Gymは2021年6月リリース予定です</p>
                 </div>
-                <div class="corporate-btn member-btn">
-                    <a href="">問い合わせ・事前申し込みはこちら</a>
-                </div> 
+                
             </div>
             
         </section>
@@ -50,6 +52,7 @@
                     </ul>
                 </div>
                 <div class="new-member-sns">
+                    <p class="p2">SNSコンサルティング</p>
                     <p class="sns-price">回数制：1回10,000円</p>
                     <p class="sns-price">定額制：月額50,000円</p>
                 </div>
@@ -80,12 +83,14 @@
             
         </section>
         
-
+     </div>
     </main>
 
 </template>
 
 <style>
+body{background-color: #F6F1F1;}
+#all{overflow-x: hidden;}
 /* 法人事業セクション */
 .section-corporate{display: flex; padding: 100px 0px;}
 .corporate-title h1{font-size: 5.0em; margin-top: 0;}
@@ -104,7 +109,12 @@
 .member-title h2{padding-bottom: 10px;font-weight: normal; display: inline-blo;}
 .member-text .p2{padding-left: 20px;}
 @media screen and (max-width: 768px){
-.member-section{padding-bottom: 0px; position: relative;}
+.member-section{padding-bottom: 50px; position: relative;}
+.member-title span{margin-left: 0;}
+.member-title span::before {
+	content: "\A" ;
+	white-space: pre ;
+}
 .only-pc{ display: none;}
 }
 
@@ -117,35 +127,43 @@
 .new-member-services ul li{list-style: none;margin-right: 60px;}
 .service-price{font-weight: bold; font-size: 24px;}
 .sns-price{font-weight: bold; font-size: 24px;padding-left: 20px;}
+.new-member-sns .p2{padding-left: 20px;}
 @media screen and (max-width: 768px){
-.new-member-section{padding-bottom: 0;}
+.new-member-section{padding-bottom: 50px; }
+.new-member-title span{margin-left: 0;}
+.new-member-title span::before {content: "\A" ;white-space: pre ;}
 .new-member-services ul{display: block;text-align:right;}
 .new-member-services ul li{list-style: none;margin-right: 0px;}
 .new-member-services ul li .p2{margin-bottom:0px;}
 .service-price{font-weight: bold; font-size: 24px; margin-top:0px;}
+.new-member-sns{text-align: right;}
 .sns-price{font-weight: bold; font-size: 24px;text-align:right;margin:15px 0 15px 0;
 }
 }
 
 /* Fitpoi */
-.user-section{position: relative;}
+.user-section{position: relative; }
+@media screen and (max-width: 768px){
+.user-section{padding-top: 30px; padding-bottom: 50px; }
+
+}
 
 /* ボタン */
-
-.corporate-btn a{color: #FF4B00; background-color: #f6f1f1 ;padding: 20px 130px 20px 50px; font-weight: bold;}
-.member-btn{position: absolute; top: 12%; right: -25%;}
-.new-member-btn{position:absolute; top: 2%; right: -25%;}
-.new-member-btn p{font-size: 10px; margin-top: 15px; text-align: center;}
+.corporate-btn a{color: #FF4B00; padding: 20px 0px 20px 50px; font-weight: bold; overflow-x: hidden;}
+.corporate-btn::before{position: absolute;content: '';top: -13px;bottom: 0; width: 2500px;height: 50px;background-color: #ffffff ;z-index: -100;}
+.member-btn{position:absolute; top: 10%; right: 0; text-align: right;}
+.new-member-btn{position:absolute; top: 2%; right: 0; text-align: right; margin-bottom: 30px;}
+.new-member-btn p{font-size: 8px;  margin: 15px calc(55% - 50vw);width: 100vw;}
 .only-sp{ display: none;}
-.user-btn{position:absolute; top: 10%; right: -25%; }
+.user-btn{position:absolute; top: 10%; right: 0; }
 
 
 @media screen and (max-width: 768px){
 .corporate-btn a{padding: 15px 40px 15px 20px; font-weight: bold; font-size: 12px;}
-.member-btn{position: static; text-align: right; margin-bottom: 40px; margin-right: -20px;}
-.new-member-btn{position: static; text-align: right; margin-bottom: 40px; margin-right: -20px;}
-.new-member-btn p{text-align: right;}
+.member-btn{text-align: right; top: 90%;}
+.new-member-btn{text-align: right; top:96% ;}
+.new-member-btn p{text-align: right; }
 .only-sp{ display: block;}
-.user-btn{position: static; text-align: right; margin-bottom: 40px; margin-right: -20px;}
+.user-btn{ text-align: right; top: 95%;}
 }
 </style>
