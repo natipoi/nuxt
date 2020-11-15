@@ -39,7 +39,6 @@ export default {
         sendMassage () {
             var email = $("#email-input").val()
             var message = $("#message-input").val()
-            console.log(email,message  )
             this.$store.dispatch('sendMessageToSlack', {
                email: email,
                message: message

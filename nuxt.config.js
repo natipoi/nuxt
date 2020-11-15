@@ -38,6 +38,10 @@ export default {
         content:
           "FitpoiはAIが自動で今のあなたに最適なワークアウトメニューを生成＋記録する次世代フィットネスアプリです。"
       },
+      {
+        name: "keywords",
+        content: "Fitpoi, 運動, 筋トレ, モチベーション, 維持"
+      },
       { 'http-equiv': "X-UA-Compatible", content: "IE=edge"},
       { hid: "og:site_name", property: "og:site_name", content: "fitpoi"},
       { hid: "og:type", property: "og:type", content: "website" },
@@ -60,9 +64,7 @@ export default {
       
     ],
     script: [
-      {
-        src: "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
-      }
+      { src: "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"}
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
