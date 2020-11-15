@@ -11,7 +11,7 @@
   export default {
     head () {
         return {
-            title: "今、あなたに、最適な運動を。",
+            title: "三日坊主とさようなら。｜運動モチベ維持アプリ Fitpoi",
         }
     }
   }
