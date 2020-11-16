@@ -15,17 +15,19 @@
 </template>
 
 <style>
-.h1 {   margin-bottom: 50px;}
+.heading-box {padding: 100px 0 80px;}
 .h1::after {
     content:"Fitpoiからのお知らせ";
-    font-size: 0.8rem;
-    color: #969594;
+    font-size: 1.0rem;
     padding-left: 10px;
     font-weight: 400;
  
 }
 .inner-section {max-width: 800px;}
 .news-wrap {width: 100%!important}
+@media screen and (max-width: 768px) {
+  .heading-box {padding: 40px 0;}
+}
 </style>
 
 <script>

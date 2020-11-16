@@ -1,7 +1,7 @@
 <template>
         <section class="section">
             <div class="inner-section">
-            <div class="info-box">
+            <div class="title">
                 <h1>運営会社</h1>
             </div>
 
@@ -36,13 +36,15 @@
         </section>
 </template>
 <style>
+.title {padding: 40px 0;}
 .hr {margin: 25px 0; width: 15%;}
-.inner-section {max-width: 800px !important;}
 @media screen and (min-width: 700px) {
-.hr {display: none;}
-.info-box {display: flex; margin-bottom: 20px}
-.info-box h2 {width: 30%;}
-.info-box p {flex: 1}
+    .title {padding: 100px 0 80px;}
+    .inner-section {max-width: 800px;}
+    .hr {display: none;}
+    .info-box {display: flex; margin: 0 auto 20px;}
+    .info-box h2 {width: 30%;}
+    .info-box p {flex: 1}
 
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
-<main class="main">
         <section class="section">
+            <div class="inner-section">
             <h1>プライバシーポリシー</h1>
 <p class="p1">Fitpoi株式会社（以下「当社」という）は、当社の提供するFitpoiの利用者（以下「ユーザー」という）に関する個人情報を含んだ情報（以下「ユーザー情報」という）の取扱いについて、以下のとおりプライバシーポリシー（以下「本ポリシー」という）を定めます。
 本ポリシーは当社が取り扱う、特定の個人を識別できる全ての情報について適用されます。</p>
@@ -114,12 +114,17 @@
 <p class="p1">support@fitpoi.com</p>
 </div>
 <p class="p1">最終更新日 2020年7月2日</p>
+</div>
 </section>
-</main>
 </template>
 <style>
+h1 { padding: 100px 0 80px;}
+.inner-section {max-width:800px;}
     h2 {margin-bottom: 20px;}
     h3 {margin-bottom: 15px;}
     h4::before {content: "・";padding-right: 5px;}
     .positive-button {display: none;}
+@media screen and (max-width: 768px){
+        h1 {font-size: 2.0rem; padding: 40px 0;}
+    }
 </style>

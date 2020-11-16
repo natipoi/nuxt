@@ -14,13 +14,13 @@
 </template>
 
 <style>
-.h1-box {margin: 0 30px;}
+
 
 h1 {margin-bottom:0;}
 .hero-image {position: relative; margin-bottom: 30px !important; overflow: hidden; height: calc(100vw * 0.6);}
 .hero-image img {width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
  
-.main-body {margin: 30px;}
+.main-body {margin: 30px 0;}
 .main-body h2 {margin-bottom: 30px;margin-top: 80px;font-size: 1.3rem;}
 .main-body h3 {margin-bottom: 30px;margin-top: 60px;font-size: 1.2rem; font-weight: 900;}
 .createdat {color: #969594; font-size: 1.0rem; text-align: right;margin-bottom: 5px;}

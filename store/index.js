@@ -100,7 +100,7 @@ export const degreeStatus = () => ({
 
 
 export const state = () => ({
-  message: "a",
+  message: "",
   nowStatus: statusList[3]
 });
 
@@ -120,9 +120,29 @@ export const actions = {
   sendMessageToSlack({ commit }, message) {
 
     var data = JSON.stringify({
-      username: message.email,
-      text: message.message,
-      icon_emoji: ":ghost:"
+      icon_emoji: ":ghost:",
+      attachments: [
+        {
+          blocks: [
+            {
+              type: "section",
+              text: {
+                type: "mrkdwn",
+                text: "*email*\n" + message.email + "\n\n" + "*body*\n" + message.message
+              }
+            },
+            {
+              type: "section",
+              block_id: "section567",
+              text: {
+                type: "mrkdwn",
+                text: "form: " + message.type
+              }
+            }
+          ],
+          color: message.color
+        }
+      ]
     });
 
     var options = {

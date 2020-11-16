@@ -10,7 +10,7 @@
             </ul>
             <ul class="footer-list2">
               <li><a href="/corporate_services/">法人事業</a></li>
-              <li><a href="/recruit/">採用</a></li>
+              <li><a href="javascript:void(0)" style="opacity: 0.2;">採用</a></li>
             </ul>
           </div>
           
@@ -26,7 +26,7 @@
            <ul class="footer-menu-common footer-sns-icon sns-icon only-pc">
             <li><a href="https://www.instagram.com/fitpoi_app/" class="insta"></a></li>
             <li><a href="https://www.facebook.com/fitpoi" class="fb"></a></li>
-            <li><a href="https://twitter.com/Fitpoi1" class="twitter"></a></li>
+            <li><a href="https://twitter.com/fitpoi_app" class="twitter"></a></li>
            </ul>
            <div id="footer-logo">
                <div class="footer-logo-img">

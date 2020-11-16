@@ -26,9 +26,8 @@
 <style>
 ul {list-style: none;}
 a {color: #010000;}
-.h1::after {content:"Fitpoi運営チームの心の声"; font-size: 0.8rem; color: #969594;padding-left: 10px;font-weight: 400;}
-.inner-section {max-width:800px;}
-.heading-box {margin: 0 30px 30px;}
+.h1::after {content:"Fitpoi運営チームの心の声"; font-size: 1.0rem;padding-left: 10px;font-weight: 400;}
+.heading-box{padding: 40px 0;}
 .blog-box {margin-bottom: 50px;}
 .createdAt {color:#969594;font-size: 0.9rem;text-align: right;margin-bottom: 5px;}
 .description {display: -webkit-box;
@@ -38,6 +37,7 @@ a {color: #010000;}
 .blog-image img {width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 .blog-content {margin: 0 30px;}
 @media screen and (min-width: 720px) {
+.inner-section {max-width:800px;}
 h2 {font-size: 1.1rem}
 .heading-box {margin-left: 0;}
 .main-blogs {max-width: 700px;margin: 0 auto;}
@@ -46,6 +46,7 @@ h2 {font-size: 1.1rem}
 .blogs-box li:nth-child(3n) {margin-right: 0;}
 .blog-image {height: 150px;}
 .blog-content {margin: 0;}
+.heading-box {padding: 100px 0 80px; }
 }
 </style>
 

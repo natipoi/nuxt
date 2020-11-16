@@ -1,6 +1,6 @@
 <template>
-<main class="main">
         <section class="section">
+            <div class="inner-section">
 
 <h1>Fitpoi 利用規約</h1>
 <div class="heading">
@@ -102,15 +102,21 @@
 <p class="p1">10.2 本サービスに関するユーザーから当社への連絡は、本サービスまたは当社ウェブサイト内の適宜の場所に設置するお問い合わせフォームの送信又は当社が指定する方法により行っていただきます。</p>
 </div>
 <p class="p1">制定日：2020年7月26日</p>
+</div>
 </section>
-</main>
 </template>
 <style>
+h1 { padding: 100px 0 80px;}
+.inner-section {max-width:800px;}
     .heading {margin-bottom: 30px;}
     h2 {margin-bottom: 25px;}
     h3 {margin-bottom: 15px;}
     h4::before {content: "・";padding-right: 5px;}
     .positive-button {display: none;}
     p {margin-bottom:0;}
+
+    @media screen and (max-width: 768px){
+        h1 {font-size: 2.0rem; padding: 40px 0;}
+    }
     
 </style>

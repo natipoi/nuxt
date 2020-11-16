@@ -3,11 +3,12 @@
       <div class="inner-section">
         <div class="overlay"><div class="loader"></div></div>
         <div class="heading-title">
-            <h1>お問い合わせ</h1>
+            <h1>お問い合わせ<span>Fitpoiアプリ内広告掲載</span></h1>
         </div>
 
         <form id="form" action="/email/" method="POST">
-        <input type="hidden" name="type" value="普通のお問い合わせ" id="type-input">
+        <input type="hidden" name="type" value="Fitpoiアプリ内広告掲載" id="type-input">
+        <input type="hidden" name="color" value="#db5d4a" id="color-input">
         <div class="form-box">
             <div class="heading-box">
             <h2>メールアドレス</h2>
@@ -32,7 +33,8 @@
         </div>
         </form>
         <div class="after-send-message">{{ $store.state.message }}</div>
-        </div>
+
+    </div>
     </section>
 </template>
 
@@ -43,10 +45,12 @@ export default {
             var email = $("#email-input").val()
             var message = $("#message-input").val()
             var type = $("#type-input").val()
+            var color = $("#color-input").val()
             this.$store.dispatch('sendMessageToSlack', {
                email: email,
                message: message,
-               type: type
+               type: type,
+               color: color
             })
             if (process.client) {
                 $("#form").hide()
@@ -57,9 +61,10 @@ export default {
 </script>
 
 <style>
-
+h1 span {font-weight: 400;font-size: 1.2rem;display: block;}
 h2 {margin-bottom: 10px;}
 input, textarea, button {border-style: none;outline: none;resize: none;}
+.heading-box {margin: 0 30px;}
 .heading-title {padding: 40px 0;}
 .main-contact {margin: 0 auto; max-width: 700px;}
 .mail-box {background-color: #fff; padding: 20px; margin-bottom: 30px;}
@@ -146,13 +151,13 @@ textarea[id=body]{width: 100%;}
   }
 }
 @media screen and (min-width: 720px) {
-  .inner-section {max-width: 800px;}
-  /* #form {margin: 0 auto;} */
     .form-box {display: flex;}
     .form-box .heading-box {width: 20%;}
     .form-box h2 {font-size: 1.0rem;}
     .text-field {flex: 1;}
+    .heading-box {margin: 0}
     .heading-title {padding: 100px 0 80px; }
+    h1 span {margin-left: 20px;font-weight: 400;display:inline-block;}
 }
 </style>
 

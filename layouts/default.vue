@@ -24,7 +24,7 @@ a {text-decoration: none;color: #000;}
 .section {position:relative; margin: 0 auto 80px; padding-bottom: 100px;overflow: hidden;}
 .inner-section {max-width: 1000px;margin: 0 auto 30px;    position: relative;}
 ul {list-style-type: disc;list-style-position: inside;margin-bottom: 20px; line-height: 2.0}
-h1 {margin: 40px 0; font-size: 1.4rem;}
+h1 {font-size: 3.0rem;}
 h2 {font-size: 1.2rem;margin-bottom: 5px;}
 h3 {margin-bottom: 30px;font-weight: 400;font-size: 1.1rem;}
 h4 {margin-bottom: 10px;font-weight: 400;font-size: 1.0rem;}
@@ -68,6 +68,7 @@ table {text-align: left;border-collapse:separate;border-spacing: 10px}
 }
 
 @media screen and (max-width: 768px) {
+  h1 {font-size: 2.5rem;}
   .p1 {margin-bottom: 10px !important;}
   .only-pc {display: none;}
   .only-sp {display: block;}

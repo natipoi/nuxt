@@ -35,7 +35,7 @@ header {padding: 15px;}
 header ul {line-height: 1;}
 #header-wrap {display: flex; flex-wrap: nowrap; align-items: baseline; max-width: 1000px;margin: 0 auto;}
 /* ロゴ */
-#header-logo{ display: inherit;zoom: 1.6;z-index: 100;}
+#header-logo{ display: inherit;zoom: 2.3;z-index: 100;}
 #header-logo a {display: inherit;}
 input[id="drawer-check"] {display: none;}
 @media screen and (min-width: 769px) {
@@ -49,6 +49,7 @@ header {padding: 25px;}
 
 }
 @media screen and (max-width: 768px) {
+    #header-logo {zoom: 1.6;}
 #header-menu-sp {position: relative; margin-left: auto; width: 48px; height: 48px;}
 #sp-modal-menu {list-style: none;}
 #sp-modal-menu-wrap {position: fixed; top:0; height: 100vh;transform-origin: 0% 0%;transform: translate(0, calc(-100%));transition: all 0.5s cubic-bezier(0.77,0.2,0.05,1.0);left:0; right:0; padding: 120px 40px 20px; z-index:1;overflow: hidden;background: #fff;}

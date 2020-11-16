@@ -22,11 +22,11 @@
                     <h2>会員の退会率を改善！ <span>Fitpoi for Gymの提供</span></h2> 
                 </div>
                 <div class="corporate-btn member-btn">
-                    <a href="">問い合わせ・事前申し込みはこちら</a>
+                    <a href="/contact/fitpoi_for_gym/">問い合わせ・事前申し込みはこちら</a>
                 </div> 
                 <div class="member-text">
                     <p class="p2">Fitpoi for Gymでは各フィットネスクラブの会員様の基本的な情報だけでなく <br class="only-pc"> 日々のトレーニング情報も収集・分析することで、より会員様に寄り添ったクラブ運営を実現します。</p>
-                    <p class="p2">※ Fitpoi for Gymは2021年6月リリース予定です</p>
+                    <p class="p2">※ Fitpoi for Gymの詳細は近日公開予定です</p>
                 </div>
                 
             </div>
@@ -57,7 +57,7 @@
                     <p class="sns-price">定額制：月額50,000円</p>
                 </div>
                 <div class="corporate-btn corporate-btn-subtext">
-                    <a href="">無料相談・見積もりはこちら</a>
+                    <a href="/contact/hp_sns_sales/">無料相談・見積もりはこちら</a>
                 </div>
             </div>
             
@@ -73,10 +73,10 @@
                 </div>
                 <div class="member-text">
                     <p class="p2">Fitpoiアプリではユーザーが閲覧するフィード、アイディアページに広告枠を設けています。<br> 広告主様のご要望に合わせてインタラクティブな形式で広告を掲載させていただきます。</p>
-                    <p class="p2">※ Fitpoiアプリ内広告は2021年2月スタート予定です</p>
+                    <p class="p2">※ Fitpoiアプリ内広告の詳細は近日公開予定です</p>
                 </div>
                 <div class="corporate-btn">
-                    <a href="">問い合わせはこちら</a>
+                    <a href="/contact/ads/">問い合わせはこちら</a>
                 </div>
             </div>
             
@@ -94,10 +94,10 @@
 .common-title h2{padding-bottom: 30px;font-weight: normal;}
 /* 法人事業セクション */
 .section-corporate{display: flex; padding: 100px 0px;align-items: flex-end;}
-.corporate-title h1{font-size: 5.0em; margin-top: 0;margin-bottom: 0;line-height: 1;}
+.corporate-title h1{line-height: 1;}
 .corporate-title{margin-right: 20px;}
 .corporate-text{padding-top: 20px; width: 34%;}
-.corporate-text p{vertical-align:middle;margin-bottom: 0;}
+.corporate-text p{vertical-align:middle;margin-bottom: 0;line-height: 1.5;}
 
 /* 会員退会率改善 */
 .member-text .p2{padding-left: 20px;}
