@@ -15,7 +15,7 @@
 
 <style>
 
-p {margin-bottom: 0 !important;}
+p {margin-bottom: 0 !important;min-height: 28px;}
 h1 {margin-bottom:0;}
 .hero-image {position: relative; margin-bottom: 30px !important; overflow: hidden; height: calc(100vw * 0.6);}
 .hero-image img {width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
