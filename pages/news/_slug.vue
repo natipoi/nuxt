@@ -26,7 +26,8 @@ h1 {margin-bottom:0;}
 .createdat {color: #969594; font-size: 1.0rem; text-align: right;margin-bottom: 5px;}
  @media screen and (min-width: 768px) {
  .hero-image {height: 400px;overflow: hidden;}
-    .h1-box, .hero-image,.main-body,.createdat   {max-width: 800px; margin: 0 auto;}
+    .h1-box, .hero-image,.createdat   {max-width: 800px; margin: 0 auto;}
+    .main-body {margin: 20px auto;}
     .h1-box {margin-top: 50px}
     .createdat {margin-bottom: 30px;}
 
