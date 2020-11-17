@@ -44,7 +44,7 @@
         // fetch all blog posts sorted by creation date
         client.getEntries({
           'content_type': "news",
-          order: 'sys.createdAt'
+          order: '-fields.publishDate'
         })
       ]).then(([news]) => {
         // return data that should be available

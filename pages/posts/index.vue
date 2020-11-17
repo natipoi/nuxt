@@ -66,7 +66,7 @@ h2 {font-size: 1.1rem}
         // fetch all blog posts sorted by creation date
         client.getEntries({
           'content_type': env.CTF_BLOG_POST_TYPE_ID,
-          order: 'sys.publishDate'
+          order: '-fields.publishDate'
         })
       ]).then(([entries, posts]) => {
         // return data that should be available
