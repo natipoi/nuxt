@@ -150,6 +150,7 @@ export default {
                 return entries.items.map((entry) => {
                     return {
                         route: `news/${entry.fields.slug}`,
+                        payload: entry
                     }
                 })
             }
