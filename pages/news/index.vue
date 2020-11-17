@@ -15,6 +15,7 @@
 </template>
 
 <style>
+
 .heading-box {padding: 100px 0 80px;}
 .h1::after {
     content:"Fitpoiからのお知らせ";
@@ -44,7 +45,7 @@
         // fetch all blog posts sorted by creation date
         client.getEntries({
           'content_type': "news",
-          order: '-fields.publishDate'
+          order: '-fields.createdAt'
         })
       ]).then(([news]) => {
         // return data that should be available
