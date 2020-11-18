@@ -17,6 +17,7 @@
 .news-date {font-weight: 600;margin-right: 40px;}
 
 @media screen and (max-width: 768px){
+    .news-wrap:after { right: 20px;}
 .news-wrap {margin-right: -20px;}
 .news-wrap p {display: block;}
 }

@@ -16,7 +16,7 @@
 <style>
 
 p {margin-bottom: 0 !important;min-height: 28px;}
-h1 {margin-bottom:0;}
+h1 {margin-bottom:0;font-size: 1.5rem;}
 .hero-image {position: relative; margin-bottom: 30px !important; overflow: hidden; height: calc(100vw * 0.6);}
 .hero-image img {width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
  
@@ -26,8 +26,9 @@ h1 {margin-bottom:0;}
 .createdat {color: #969594; font-size: 1.0rem; text-align: right;margin-bottom: 5px;}
  @media screen and (min-width: 768px) {
  .hero-image {height: 400px;overflow: hidden;}
+ h1 {margin-bottom:0;font-size: 2.0rem;}
     .h1-box, .hero-image,.createdat   {max-width: 800px; margin: 0 auto;}
-    .main-body {margin: 20px auto;}
+    .main-body {margin: 30px auto;max-width: 800px;}
     .h1-box {margin-top: 50px}
     .createdat {margin-bottom: 30px;}
 

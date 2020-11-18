@@ -119,7 +119,7 @@
 </section>
 </template>
 <style>
-h1 { padding: 100px 0;}
+h1 { padding: 100px 0 80px;}
 .inner-section {max-width:800px;}
 h2 {margin-bottom: 20px;}
 h3 {margin-bottom: 15px;}
