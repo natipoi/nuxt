@@ -87,7 +87,7 @@ h2 {font-size: 1.1rem}
     },
     head () {
         return {
-            title: "Fitpoiの日常",
+            title: "Fitpoiの日常｜Fitpoi",
             meta: [
               { hid: 'og:title', property: 'og:title', content: "Fitpoiの日常" },
                 { hid: 'og:url', property: 'og:url', content: `https://fitpoi.com/posts/` },

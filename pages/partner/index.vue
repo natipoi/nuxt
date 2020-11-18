@@ -41,7 +41,7 @@
 export default {
     head () {
         return {
-            title: "Fitpoiの協力パートナー",
+            title: "Fitpoiの協力パートナー｜Fitpoi",
             meta: [
                 { hid: 'og:title', property: 'og:title', content: "Fitpoiの協力パートナー" },
                 { hid: 'og:url', property: 'og:url', content: `https://fitpoi.com/partner/` },

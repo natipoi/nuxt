@@ -109,7 +109,7 @@
 export default {
     head () {
         return {
-            title: "Fitpoiの利用規則",
+            title: "Fitpoiの利用規則｜Fitpoi",
             meta: [
                 { hid: 'og:title', property: 'og:title', content: "Fitpoiの利用規則" },
                 { hid: 'og:url', property: 'og:url', content: `https://fitpoi.com/terms-conditions/` },

@@ -90,7 +90,7 @@
 export default {
     head () {
         return {
-            title: "Fitpoiの法人事業",
+            title: "Fitpoiの法人事業｜Fitpoi",
             meta: [
                 { hid: 'og:title', property: 'og:title', content: "Fitpoiの法人事業" },
                 { hid: 'og:url', property: 'og:url', content: `https://fitpoi.com/business/` },

@@ -121,7 +121,7 @@
 export default {
     head () {
         return {
-            title: "Fitpoiのプライバシーポリシー",
+            title: "Fitpoiのプライバシーポリシー｜Fitpoi",
             meta: [
                 { hid: 'og:title', property: 'og:title', content: "Fitpoiのプライバシーポリシー" },
                 { hid: 'og:url', property: 'og:url', content: `https://fitpoi.com/privacy_policy/` },

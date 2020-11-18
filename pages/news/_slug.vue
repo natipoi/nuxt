@@ -64,7 +64,7 @@ export default {
     },
     head () {
         return {
-            title: this.post.fields.title,
+            title: this.post.fields.title + "｜Fitpoi",
             meta: [
                 { hid: 'description', name: 'description', content: this.post.fields.description },
                 { hid: 'og:type', property: 'og:type', content: 'article' },

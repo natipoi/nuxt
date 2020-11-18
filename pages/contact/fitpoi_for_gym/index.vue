@@ -58,7 +58,7 @@ export default {
     },
     head () {
         return {
-            title: "Fitpoi for Gymの提供に関するお問い合わせ",
+            title: "Fitpoi for Gymの提供に関するお問い合わせ｜Fitpoi",
             meta: [
                 { hid: 'og:title', property: 'og:title', content: "Fitpoi for Gymの提供に関するお問い合わせ" },
                 { hid: 'og:url', property: 'og:url', content: `https://fitpoi.com/contact/fitpoi_for_gym/` },

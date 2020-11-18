@@ -59,7 +59,7 @@ export default {
     },
     head () {
         return {
-            title: "Fitpoiアプリ内広告掲載に関するお問い合わせ",
+            title: "Fitpoiアプリ内広告掲載に関するお問い合わせ｜Fitpoi",
             meta: [
                 { hid: 'og:title', property: 'og:title', content: "Fitpoiアプリ内広告掲載に関するお問い合わせ" },
                 { hid: 'og:url', property: 'og:url', content: `https://fitpoi.com/contact/ads/` },

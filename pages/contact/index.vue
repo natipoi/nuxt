@@ -55,7 +55,7 @@ export default {
     },
     head () {
         return {
-            title: "Fitpoiへのお問い合わせ",
+            title: "Fitpoiへのお問い合わせ｜Fitpoi",
             meta: [
                 { hid: 'og:title', property: 'og:title', content: "Fitpoiへのお問い合わせ" },
                 { hid: 'og:url', property: 'og:url', content: `https://fitpoi.com/contact/` },
@@ -65,7 +65,7 @@ export default {
                 { hid:"canonical", rel: "canonical", href: `https://fitpoi.com/contact/` }
             ]
         }
-    },
+    }
     
 }
 </script>

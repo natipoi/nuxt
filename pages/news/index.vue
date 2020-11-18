@@ -65,7 +65,7 @@
     },
     head () {
         return {
-            title: "Fitpoiからのお知らせ",
+            title: "Fitpoiからのお知らせ｜Fitpoi",
             meta: [
                 { hid: 'og:url', property: 'og:url', content: `https://fitpoi.com/news/` },
             ],
