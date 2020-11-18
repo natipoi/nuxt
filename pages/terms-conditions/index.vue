@@ -111,7 +111,7 @@ export default {
         return {
             title: "Fitpoiの利用規則｜Fitpoi",
             meta: [
-                { hid: 'og:title', property: 'og:title', content: "Fitpoiの利用規則" },
+                { hid: 'og:title', property: 'og:title', content: "Fitpoiの利用規則｜Fitpoi" },
                 { hid: 'og:url', property: 'og:url', content: `https://fitpoi.com/terms-conditions/` },
                 // { hid: 'og:image', property: 'og:image', content: this.post.fields.heroImage.fields.file.url },
             ],

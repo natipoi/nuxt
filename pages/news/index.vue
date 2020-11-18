@@ -67,6 +67,7 @@
         return {
             title: "Fitpoiからのお知らせ｜Fitpoi",
             meta: [
+              { hid: 'og:title', property: 'og:title', content: "Fitpoiからのお知らせ｜Fitpoi" },
                 { hid: 'og:url', property: 'og:url', content: `https://fitpoi.com/news/` },
             ],
             link: [

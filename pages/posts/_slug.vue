@@ -64,7 +64,7 @@ export default {
             meta: [
                 { hid: 'description', name: 'description', content: this.post.fields.description },
                 { hid: 'og:type', property: 'og:type', content: 'article' },
-                { hid: 'og:title', property: 'og:title', content: this.post.fields.title },
+                { hid: 'og:title', property: 'og:title', content: this.post.fields.title + "｜Fitpoi" },
                 { hid: 'og:description', property: 'og:description', content: this.post.fields.description },
                 { hid: 'og:url', property: 'og:url', content: `https://fitpoi.com/posts/${this.post.fields.slug}/` },
                 { hid: 'og:image', property: 'og:image', content: this.post.fields.heroImage.fields.file.url },
