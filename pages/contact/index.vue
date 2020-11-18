@@ -52,7 +52,21 @@ export default {
                 $("#form").hide()
             }
         }
-    }
+    },
+    head () {
+        return {
+            title: "Fitpoiへのお問い合わせ",
+            meta: [
+                { hid: 'og:title', property: 'og:title', content: "Fitpoiへのお問い合わせ" },
+                { hid: 'og:url', property: 'og:url', content: `https://fitpoi.com/contact/` },
+                // { hid: 'og:image', property: 'og:image', content: this.post.fields.heroImage.fields.file.url },
+            ],
+            link: [
+                { hid:"canonical", rel: "canonical", href: `https://fitpoi.com/contact/` }
+            ]
+        }
+    },
+    
 }
 </script>
 

@@ -84,6 +84,19 @@ h2 {font-size: 1.1rem}
           posts: posts.items
         }
       }).catch(console.error)
+    },
+    head () {
+        return {
+            title: "Fitpoiの日常",
+            meta: [
+              { hid: 'og:title', property: 'og:title', content: "Fitpoiの日常" },
+                { hid: 'og:url', property: 'og:url', content: `https://fitpoi.com/posts/` },
+            ],
+            link: [
+                { hid:"canonical", rel: "canonical", href: `https://fitpoi.com/posts/` }
+            ]
+        }
     }
+
   }
 </script>

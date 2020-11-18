@@ -86,7 +86,23 @@
     </main>
 
 </template>
-
+<script>
+export default {
+    head () {
+        return {
+            title: "Fitpoiの法人事業",
+            meta: [
+                { hid: 'og:title', property: 'og:title', content: "Fitpoiの法人事業" },
+                { hid: 'og:url', property: 'og:url', content: `https://fitpoi.com/business/` },
+                // { hid: 'og:image', property: 'og:image', content: this.post.fields.heroImage.fields.file.url },
+            ],
+            link: [
+                { hid:"canonical", rel: "canonical", href: `https://fitpoi.com/business/` }
+            ]
+        }
+    }
+}
+</script>
 <style>
 /* body{background-color: #F6F1F1;} */
 #all{overflow-x: hidden;}

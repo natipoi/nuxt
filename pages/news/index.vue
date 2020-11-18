@@ -62,6 +62,17 @@
           news: news.items
         }
       }).catch(console.error)
+    },
+    head () {
+        return {
+            title: "Fitpoiからのお知らせ",
+            meta: [
+                { hid: 'og:url', property: 'og:url', content: `https://fitpoi.com/news/` },
+            ],
+            link: [
+                { hid:"canonical", rel: "canonical", href: `https://fitpoi.com/news/` }
+            ]
+        }
     }
   }
 </script>

@@ -35,6 +35,23 @@
 
         </section>
 </template>
+<script>
+export default {
+    head () {
+        return {
+            title: "Fitpoiについて",
+            meta: [
+                { hid: 'og:title', property: 'og:title', content: "Fitpoiについて" },
+                { hid: 'og:url', property: 'og:url', content: `https://fitpoi.com/about/` },
+                // { hid: 'og:image', property: 'og:image', content: this.post.fields.heroImage.fields.file.url },
+            ],
+            link: [
+                { hid:"canonical", rel: "canonical", href: `https://fitpoi.com/about/` }
+            ]
+        }
+    }
+}
+</script>
 <style>
 .title {padding: 40px 0;}
 .hr {margin: 25px 0; width: 15%;}

@@ -56,6 +56,19 @@ export default {
                 $("#form").hide()
             }
         }
+    },
+    head () {
+        return {
+            title: "ホームページ・SNS 運用改善に関するお問い合わせ",
+            meta: [
+                { hid: 'og:title', property: 'og:title', content: "ホームページ・SNS 運用改善に関するお問い合わせ" },
+                { hid: 'og:url', property: 'og:url', content: `https://fitpoi.com/contact/hp_sns_sales/` },
+                // { hid: 'og:image', property: 'og:image', content: this.post.fields.heroImage.fields.file.url },
+            ],
+            link: [
+                { hid:"canonical", rel: "canonical", href: `https://fitpoi.com/contact/hp_sns_sales/` }
+            ]
+        }
     }
 }
 </script>

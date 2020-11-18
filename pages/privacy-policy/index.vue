@@ -118,6 +118,23 @@
 </div>
 </section>
 </template>
+<script>
+export default {
+    head () {
+        return {
+            title: "Fitpoiのプライバシーポリシー",
+            meta: [
+                { hid: 'og:title', property: 'og:title', content: "Fitpoiのプライバシーポリシー" },
+                { hid: 'og:url', property: 'og:url', content: `https://fitpoi.com/privacy-policy/` },
+                // { hid: 'og:image', property: 'og:image', content: this.post.fields.heroImage.fields.file.url },
+            ],
+            link: [
+                { hid:"canonical", rel: "canonical", href: `https://fitpoi.com/privacy-policy/` }
+            ]
+        }
+    }
+}
+</script>
 <style>
 h1 { padding: 100px 0 80px;}
 .inner-section {max-width:800px;}

@@ -37,6 +37,23 @@
 
     </section>
 </template>
+<script>
+export default {
+    head () {
+        return {
+            title: "Fitpoiの協力パートナー",
+            meta: [
+                { hid: 'og:title', property: 'og:title', content: "Fitpoiの協力パートナー" },
+                { hid: 'og:url', property: 'og:url', content: `https://fitpoi.com/partner/` },
+                // { hid: 'og:image', property: 'og:image', content: this.post.fields.heroImage.fields.file.url },
+            ],
+            link: [
+                { hid:"canonical", rel: "canonical", href: `https://fitpoi.com/partner/` }
+            ]
+        }
+    }
+}
+</script>
 <style>
 .heading-box { padding: 40px 0;}
 .inner-section {max-width: 800px;}
