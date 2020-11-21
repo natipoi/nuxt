@@ -38,7 +38,7 @@ export default {
       { hid: "og:site_name", property: "og:site_name", content: "Fitpoi"},
       { hid: "og:type", property: "og:type", content: "website" },
       { hid: "og:url", property: "og:url", content: "https://fitpoi.com/" },
-      { hid: "og:title", property: "og:title", content: "三日坊主とさようなら。｜運動モチベ維持アプリ Fitpoi" },
+      { hid: "og:title", property: "og:title", content: "三日坊主にさようなら｜運動モチベ維持アプリ Fitpoi" },
       { hid: "og:description", property: "og:description", content: "運動できる環境がいくら整っていても、続かないんじゃ意味がない。Fitpoi アプリは、運動があなたの生活の一部になるまでをお手伝いするフィットネスモチベーション維持アプリです。あなたの『負けず嫌い』を刺激させていただきます。"},
       { hid: "og:image", property: "og:image", content: "/OGP.png"},
       { property: "og:locale",content: "ja_JP"},
